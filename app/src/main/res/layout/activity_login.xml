@@ -7,12 +7,15 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
+    android:background="#2C2C2C"
     tools:context=".view.Login">
 
     <LinearLayout
-        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/abuabu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -25,77 +28,97 @@
 
         </de.hdodenhof.circleimageview.CircleImageView>
 
-        <TextView
-            android:layout_marginTop="12dp"
-            android:textSize="15dp"
-            android:gravity="center"
-            android:drawablePadding="5dp"
-            android:text="Login"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
-
-        </TextView>
-
+            android:orientation="vertical"
+            android:layout_margin="10dp">
 
 
-        <TextView
-            android:drawableLeft="@drawable/ic_baseline_person_24"
-            android:drawablePadding="5dp"
-            android:text="Nama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            <TextView
+                android:textColor="#BFBABA"
 
-        </TextView>
+                android:layout_marginTop="12dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:text="Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
 
-        <EditText
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:background="@drawable/bakron_kembali"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </EditText>
-
-        <TextView
-            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
-            android:drawablePadding="5dp"
-            android:text="Password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
-        </TextView>
-
-        <EditText
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:background="@drawable/bakron_kembali"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </EditText>
-
-
-        <TextView
-            android:textColor="#000"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="Login"
-            android:gravity="center"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:padding="10dp"
-            android:background="@drawable/bakron_kembali"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </TextView>
+            </TextView>
 
 
 
+            <TextView
+                android:textColor="#BFBABA"
+
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="5dp"
+                android:text="Nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </TextView>
+
+            <EditText
+                android:textColor="#BFBABA"
+
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/bakron_kembali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <TextView
+                android:textColor="#BFBABA"
+
+                android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="5dp"
+                android:text="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </TextView>
+
+            <EditText
+                android:textColor="#BFBABA"
+
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/bakron_kembali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+
+            <TextView
+                android:textColor="#BFBABA"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Login"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@drawable/bakron_kembali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
