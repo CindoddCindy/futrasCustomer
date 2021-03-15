@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:layout_margin="5dp"
+        app:cardMaxElevation="5dp">
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/example_image">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="12dp"
+                android:textColor="#233E3B"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_baseline_food_bank_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Makanan "
+                />
+            <TextView
+                android:textSize="12dp"
+                android:textColor="#233E3B"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_baseline_local_dining_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Makanan "
+                />
+            <TextView
+                android:textSize="12dp"
+                android:textColor="#233E3B"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lokasi Makanan "
+                />
+            <TextView
+                android:textSize="12dp"
+                android:textColor="#233E3B"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Makanan"
+                />
+            <TextView
+                android:textSize="12dp"
+                android:textColor="#233E3B"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Penjual "
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
