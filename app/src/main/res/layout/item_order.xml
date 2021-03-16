@@ -17,7 +17,7 @@
 
 
         <LinearLayout
-            android:background="#FAF6F6"
+            android:background="#232740"
             android:padding="5dp"
             android:layout_gravity="center"
             android:gravity="center"
@@ -65,90 +65,41 @@
 
 
                 <LinearLayout
-                    android:layout_marginBottom="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:shadowColor="#F0F5F6"
+                        android:shadowRadius="2"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:textColor="#EDE5E5"
+                        android:text="Order Diterima"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
-                        <TextView
-                            android:layout_weight="1"
-                            android:textColor="#CDDC39"
-                            android:layout_marginTop="12dp"
-                            android:textSize="12dp"
-                            android:textStyle="bold"
-                            android:gravity="left"
-                            android:drawablePadding="5dp"
-                            android:text="Mitra Confirmation"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            >
+                        >
 
-                        </TextView>
+                    </TextView>
 
-                        <TextView
-                            android:textColor="#CDDC39"
-                            android:layout_marginTop="12dp"
-                            android:textSize="12dp"
-                            android:textStyle="bold"
-                            android:gravity="left"
-                            android:drawablePadding="5dp"
-                            android:text="Catatan Mitra"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            >
-
-                        </TextView>
-
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:shadowColor="#F0F5F6"
+                        android:shadowRadius="2"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:textColor="#EDE5E5"
+                        android:text="mohon mengamibilo order pukul 16.00"
+                        android:gravity="center"
+                        android:textStyle="normal"
+                        android:textSize="12dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
-                        <TextView
-                            android:layout_marginLeft="5dp"
-                            android:layout_weight="1"
-                            android:textColor="#4CAF50"
-                            android:layout_marginTop="12dp"
-                            android:textSize="12dp"
-                            android:textStyle="bold"
-                            android:gravity="left"
-                            android:drawablePadding="5dp"
-                            android:text="OK"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            >
+                        >
 
-                        </TextView>
-
-                        <TextView
-                            android:layout_marginLeft="5dp"
-                            android:textColor="#4CAF50"
-                            android:layout_marginTop="12dp"
-                            android:textSize="12dp"
-                            android:textStyle="bold"
-                            android:gravity="left"
-                            android:drawablePadding="5dp"
-                            android:text="bisa di ambil jam 4 sore"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            >
-
-                        </TextView>
-
-
-
-                    </LinearLayout>
-
-
-
+                    </TextView>
 
 
 
