@@ -31,6 +31,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+                <TextView
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:textColor="#BFBABA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Penjual "
+                    />
 
 
 
@@ -44,6 +54,7 @@
 
                 </de.hdodenhof.circleimageview.CircleImageView>
 
+
             </LinearLayout>
 
             <LinearLayout
@@ -52,16 +63,96 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
 
-                <TextView
-                    android:padding="2dp"
-                    android:textStyle="bold"
-                    android:textSize="10dp"
-                    android:textColor="#BFBABA"
+
+                <LinearLayout
+                    android:layout_marginBottom="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nama Penjual "
-                    />
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="#CDDC39"
+                            android:layout_marginTop="12dp"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:drawablePadding="5dp"
+                            android:text="Mitra Confirmation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
 
+                        </TextView>
+
+                        <TextView
+                            android:textColor="#CDDC39"
+                            android:layout_marginTop="12dp"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:drawablePadding="5dp"
+                            android:text="Catatan Mitra"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:textColor="#4CAF50"
+                            android:layout_marginTop="12dp"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:drawablePadding="5dp"
+                            android:text="OK"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#4CAF50"
+                            android:layout_marginTop="12dp"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:drawablePadding="5dp"
+                            android:text="bisa di ambil jam 4 sore"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
 
 
 
