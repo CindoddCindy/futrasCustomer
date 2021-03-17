@@ -66,7 +66,6 @@
                         android:shadowRadius="2"
                         android:shadowDx="1"
                         android:shadowDy="1"
-                        android:drawableLeft="@drawable/ic_baseline_how_to_reg_24"
                         android:layout_weight="1"
                         android:textColor="#F3F4F3"
                         android:layout_marginTop="12dp"
@@ -82,7 +81,6 @@
                     </TextView>
 
                     <TextView
-                        android:drawableLeft="@drawable/ic_baseline_edit_24"
                         android:shadowColor="#F1F5F6"
                         android:shadowRadius="2"
                         android:shadowDx="1"
