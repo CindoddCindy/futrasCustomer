@@ -10,6 +10,14 @@
     android:background="#232740"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/abuabu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,6 +45,8 @@
         android:textColor="#F1EBEB"
          />
 
+
+    </LinearLayout>
 
 
 </LinearLayout>
