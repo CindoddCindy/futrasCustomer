@@ -28,6 +28,12 @@
     </de.hdodenhof.circleimageview.CircleImageView>
 
     <TextView
+        android:textStyle="bold"
+        android:shadowColor="#E6ECED"
+        android:shadowRadius="2"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:padding="10dp"
         android:layout_marginTop="10dp"
         android:textColor="#FAFFFE"
         android:layout_width="wrap_content"
@@ -37,13 +43,28 @@
          />
 
     <TextView
-
-        android:textSize="12dp"
+        android:shadowColor="#E6ECED"
+        android:shadowRadius="2"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:padding="10dp"
+        android:textSize="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jual, Sumbang, Daur  Ulang Makanan Sisa "
         android:textColor="#F1EBEB"
          />
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For Customer "
+            android:textColor="#F1EBEB"
+            />
+
+
 
 
     </LinearLayout>

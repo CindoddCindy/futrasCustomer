@@ -8,7 +8,6 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:background="#232740"
-
     tools:context=".view.OrderPage">
 
     <LinearLayout
