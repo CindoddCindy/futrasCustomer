@@ -36,6 +36,7 @@
         </de.hdodenhof.circleimageview.CircleImageView>
 
         <TextView
+
             android:textColor="#BFBABA"
             android:layout_marginTop="12dp"
             android:textSize="15dp"
@@ -62,6 +63,8 @@
         </TextView>
 
         <EditText
+            android:gravity="center"
+            android:id="@+id/et_regis_name"
             android:textColor="#BFBABA"
             android:layout_margin="10dp"
             android:padding="5dp"
@@ -83,6 +86,8 @@
         </TextView>
 
         <EditText
+            android:gravity="center"
+            android:id="@+id/et_regis_email"
             android:textColor="#BFBABA"
             android:layout_margin="10dp"
             android:padding="5dp"
@@ -103,6 +108,8 @@
         </TextView>
 
         <EditText
+            android:gravity="center"
+            android:id="@+id/et_regis_phone"
             android:textColor="#BFBABA"
             android:layout_margin="10dp"
             android:padding="5dp"
@@ -123,6 +130,8 @@
         </TextView>
 
         <EditText
+            android:gravity="center"
+            android:id="@+id/et_regis_pass"
             android:textColor="#BFBABA"
             android:layout_margin="10dp"
             android:padding="5dp"
@@ -134,6 +143,7 @@
 
 
         <TextView
+            android:id="@+id/tv_btn_regis"
             android:textColor="#BFBABA"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
