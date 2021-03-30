@@ -5,18 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center"
-    android:gravity="center"
     android:background="#232740"
     tools:context=".view.OrderPage">
 
     <LinearLayout
-        android:layout_gravity="center"
-        android:gravity="center"
         android:background="@drawable/abuabu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:shadowColor="#F0F5F6"
+                    android:shadowRadius="2"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:textColor="#EDE5E5"
+                    android:text="Dipost mitra pada tanggal"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:shadowColor="#F0F5F6"
+                    android:shadowRadius="2"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:textColor="#EDE5E5"
+                    android:text="Tanggal Post"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:textSize="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/garis">
+
+
+            </ImageView>
+
+
+
+
+        </LinearLayout>
 
 
         <LinearLayout

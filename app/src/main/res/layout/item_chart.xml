@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:padding="10dp"
     android:layout_margin="5dp"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:padding="5dp"
+        android:padding="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="2dp"
@@ -18,7 +18,7 @@
 
         <LinearLayout
             android:background="#232740"
-            android:padding="5dp"
+            android:padding="15dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:layout_width="match_parent"
@@ -31,32 +31,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:padding="5dp"
-
-                    android:layout_gravity="center"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/example_image">
-
-                </de.hdodenhof.circleimageview.CircleImageView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-
                 <TextView
                     android:padding="5dp"
                     android:textStyle="bold"
+                    android:gravity="center"
                     android:textSize="10dp"
-                    android:drawableRight="@drawable/ic_baseline_delete_24"
                     android:textColor="#E7F8D3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -66,10 +45,103 @@
 
 
 
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:padding="5dp"
+
+                    android:layout_gravity="center"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/example_image">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
 
                 <LinearLayout
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                  >
+                    <TextView
+                        android:drawableRight="@drawable/ic_baseline_more_horiz_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:shadowColor="#F0F5F6"
+                            android:shadowRadius="2"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:textColor="#EDE5E5"
+                            android:text="Tanggal Post"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:shadowColor="#F0F5F6"
+                            android:shadowRadius="2"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:textColor="#EDE5E5"
+                            android:text="Tanggal Post"
+                            android:gravity="center"
+                            android:textStyle="normal"
+                            android:textSize="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/garis">
+
+
+                    </ImageView>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -81,8 +153,6 @@
                         android:orientation="vertical"
                         android:layout_weight="1">
                         <TextView
-                            android:padding="5dp"
-
                             android:textSize="12dp"
                             android:textColor="#E7F8D3"
                             android:drawablePadding="5dp"
@@ -92,8 +162,6 @@
                             android:text="Jenis Makanan "
                             />
                         <TextView
-                            android:padding="5dp"
-
                             android:textSize="12dp"
                             android:textColor="#E7F8D3"
                             android:drawablePadding="5dp"
@@ -113,7 +181,6 @@
                         android:layout_weight="1">
                         <TextView
                             android:textColor="#E7F8D3"
-                            android:padding="5dp"
                             android:textSize="12dp"
                             android:drawablePadding="5dp"
                             android:drawableLeft="@drawable/ic_baseline_food_bank_24"
@@ -122,8 +189,6 @@
                             android:text="Nama Makanan "
                             />
                         <TextView
-                            android:padding="5dp"
-
                             android:textSize="12dp"
                             android:textColor="#E7F8D3"
                             android:drawablePadding="5dp"
