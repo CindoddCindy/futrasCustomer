@@ -8,6 +8,7 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_all_food_item"
         android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,6 +33,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/tv_all_food_nama_penjual"
                 android:gravity="center"
                 android:padding="2dp"
                 android:textStyle="bold"
@@ -90,6 +92,7 @@
                     </TextView>
 
                     <TextView
+                        android:id="@+id/tv_all_food_date"
                         android:layout_weight="1"
                         android:shadowColor="#F0F5F6"
                         android:shadowRadius="2"
@@ -143,8 +146,8 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <TextView
+                    android:id="@+id/tv_all_food_jenis_makanan"
                     android:padding="5dp"
-
                     android:textSize="12dp"
                     android:textColor="#BFBABA"
                     android:drawablePadding="5dp"
@@ -154,8 +157,8 @@
                     android:text="Jenis Makanan "
                     />
                 <TextView
+                    android:id="@+id/tv_all_food_lokasi_makanan"
                     android:padding="5dp"
-
                     android:textSize="12dp"
                     android:textColor="#BFBABA"
                     android:drawablePadding="5dp"
@@ -174,18 +177,19 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <TextView
+                    android:id="@+id/tv_all_food_phone"
                     android:textColor="#BFBABA"
                     android:padding="5dp"
                     android:textSize="12dp"
                     android:drawablePadding="5dp"
-                    android:drawableLeft="@drawable/ic_baseline_food_bank_24"
+                    android:drawableLeft="@drawable/ic_baseline_phone_24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nama Makanan "
+                    android:text="Phone "
                     />
                 <TextView
+                    android:id="@+id/tv_all_food_price"
                     android:padding="5dp"
-
                     android:textSize="12dp"
                     android:textColor="#BFBABA"
                     android:drawablePadding="5dp"
