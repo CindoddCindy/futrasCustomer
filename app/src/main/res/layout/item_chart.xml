@@ -8,6 +8,7 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_chart_item"
         android:padding="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,6 +33,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
+                    android:id="@+id/tv_chart_nama_penjual"
                     android:padding="5dp"
                     android:textStyle="bold"
                     android:gravity="center"
@@ -71,6 +73,7 @@
                     android:orientation="vertical"
                   >
                     <TextView
+                        android:id="@+id/tv_chart_delete_chart"
                         android:drawableRight="@drawable/ic_baseline_more_horiz_24"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -100,6 +103,7 @@
                         </TextView>
 
                         <TextView
+                            android:id="@+id/tv_chart_tanggal_post"
                             android:layout_weight="1"
                             android:shadowColor="#F0F5F6"
                             android:shadowRadius="2"
@@ -154,6 +158,7 @@
                         android:orientation="vertical"
                         android:layout_weight="1">
                         <TextView
+                            android:id="@+id/tv_chart_jenis_makanan"
                             android:textSize="12dp"
                             android:textColor="#E7F8D3"
                             android:drawablePadding="5dp"
@@ -163,6 +168,7 @@
                             android:text="Jenis Makanan "
                             />
                         <TextView
+                            android:id="@+id/tv_chart_lokasi_makanan"
                             android:textSize="12dp"
                             android:textColor="#E7F8D3"
                             android:drawablePadding="5dp"
@@ -181,15 +187,17 @@
                         android:orientation="vertical"
                         android:layout_weight="1">
                         <TextView
+                            android:id="@+id/tv_chart_phone"
                             android:textColor="#E7F8D3"
                             android:textSize="12dp"
                             android:drawablePadding="5dp"
-                            android:drawableLeft="@drawable/ic_baseline_food_bank_24"
+                            android:drawableLeft="@drawable/ic_baseline_phone_24"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nama Makanan "
+                            android:text="Phone"
                             />
                         <TextView
+                            android:id="@+id/tv_chart_harga"
                             android:textSize="12dp"
                             android:textColor="#E7F8D3"
                             android:drawablePadding="5dp"
