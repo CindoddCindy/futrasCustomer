@@ -64,8 +64,9 @@
             </TextView>
 
             <EditText
+                android:id="@+id/et_login_name"
                 android:textColor="#BFBABA"
-
+                android:gravity="center"
                 android:layout_margin="10dp"
                 android:padding="5dp"
                 android:background="@drawable/bakron_kembali"
@@ -87,8 +88,9 @@
             </TextView>
 
             <EditText
+                android:id="@+id/et_login_password"
                 android:textColor="#BFBABA"
-
+                android:gravity="center"
                 android:layout_margin="10dp"
                 android:padding="5dp"
                 android:background="@drawable/bakron_kembali"
@@ -99,6 +101,7 @@
 
 
             <TextView
+                android:id="@+id/tv_btn_login"
                 android:textColor="#BFBABA"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
