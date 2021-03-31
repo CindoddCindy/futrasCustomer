@@ -87,7 +87,6 @@
                                 android:shadowRadius="2"
                                 android:shadowDx="1"
                                 android:shadowDy="1"
-                                android:id="@+id/tv_confirm_order_terima_tolak"
                                 android:textColor="#EDE5E5"
                                 android:text="Status Order"
                                 android:gravity="center"
@@ -145,6 +144,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
                             <TextView
+                                android:id="@+id/tv_conf_satatus_order"
                                 android:shadowColor="#E6ECED"
                                 android:shadowRadius="2"
                                 android:shadowDx="1"
@@ -160,6 +160,7 @@
 
                             </TextView>
                             <TextView
+                                android:id="@+id/tv_conf_catatan_mitra"
                                 android:shadowColor="#E6ECED"
                                 android:shadowRadius="2"
                                 android:shadowDx="1"
@@ -175,6 +176,7 @@
 
                             </TextView>
                             <TextView
+                                android:id="@+id/tv_conf_tanggal_confirm"
                                 android:shadowColor="#E6ECED"
                                 android:shadowRadius="2"
                                 android:shadowDx="1"
@@ -266,7 +268,7 @@
                             />
                         <TextView
                             android:gravity="left"
-                            android:id="@+id/tv_confirm_lokasi_customer"
+                            android:id="@+id/tv_confirm_lokasi_makanan"
                             android:padding="5dp"
                             android:textSize="12dp"
                             android:textColor="#BFBABA"
@@ -290,19 +292,7 @@
                         android:orientation="vertical"
                         android:layout_weight="1">
                         <TextView
-                            android:gravity="center"
-                            android:id="@+id/tv_confirm_cutomer_name"
-                            android:textColor="#BFBABA"
-                            android:padding="5dp"
-                            android:textSize="12dp"
-                            android:drawablePadding="5dp"
-                            android:drawableLeft="@drawable/ic_baseline_person_24"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Nama Penjual/Mitra"
-                            />
-
-                        <TextView
+                            android:id="@+id/tv_confirm_phone_makanan"
                             android:gravity="center"
                             android:textColor="#BFBABA"
                             android:padding="5dp"
@@ -311,9 +301,23 @@
                             android:drawableLeft="@drawable/ic_baseline_phone_24"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Phone Mitra"
+                            android:text="Phone"
                             />
 
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/tv_confirm_harga_makanan"
+                            android:textColor="#BFBABA"
+                            android:padding="5dp"
+                            android:textSize="12dp"
+                            android:drawablePadding="5dp"
+                            android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Harga Makanan"
+                            />
 
 
                     </LinearLayout>
