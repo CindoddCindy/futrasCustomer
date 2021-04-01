@@ -36,14 +36,7 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.Orde
 
         public OrderItemChild(@NonNull View itemView) {
             super(itemView);
-            cardView_order_item=itemView.findViewById(R.id.cv_order_item);
-            textView_hapus=itemView.findViewById(R.id.tv_order_hapus);
-            textView_tanggal=itemView.findViewById(R.id.tv_order_tanggal_post);
-            textView_nama_penjual=itemView.findViewById(R.id.tv_order_nama_penjual);
-            textView_nama_makanan=itemView.findViewById(R.id.tv_order_nama_makanan);
-            textView_lokasi_makakan=itemView.findViewById(R.id.tv_order_lokasi_makanan);
-            textView_phone=itemView.findViewById(R.id.tv_order_phone);
-            textView_harga=itemView.findViewById(R.id.tv_order_harga);
+
         }
     }
 }
