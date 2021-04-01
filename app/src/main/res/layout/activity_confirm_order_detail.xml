@@ -28,7 +28,7 @@
             android:textSize="15dp"
             android:gravity="center"
             android:drawablePadding="5dp"
-            android:text="Nama Penjual"
+            android:text="Konfirm Detail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
@@ -68,7 +68,7 @@
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:textColor="#EDE5E5"
-                    android:text="Tanggal Post"
+                    android:text="Tanggal Konfirmasi"
                     android:gravity="center"
                     android:textStyle="normal"
                     android:textSize="12dp"
@@ -167,7 +167,7 @@
                         android:drawableLeft="@drawable/ic_baseline_location_on_24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Lokasi Customer "
+                        android:text="Lokasi Makanan "
                         />
 
 
@@ -187,7 +187,7 @@
                         android:drawableLeft="@drawable/ic_baseline_person_24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nama Cutomer"
+                        android:text="Nama Mitra"
                         />
                     <TextView
                         android:id="@+id/tv_confirm_detail_cust_phone"
@@ -198,7 +198,7 @@
                         android:drawableLeft="@drawable/ic_baseline_phone_24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Phone"
+                        android:text="Phone Mitra"
                         />
 
 
@@ -224,7 +224,7 @@
                 android:textSize="15dp"
                 android:gravity="center"
                 android:drawablePadding="5dp"
-                android:text="Konfirmasi Order"
+                android:text=" Order DiKonfirmasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
