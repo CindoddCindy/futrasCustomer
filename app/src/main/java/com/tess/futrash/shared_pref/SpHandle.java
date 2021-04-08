@@ -54,12 +54,12 @@ public class SpHandle {
         spEditor.commit();
     }
 
-    public void setSpNamaMitra(String keySp, String value){
+    public void setSpNamaCust(String keySp, String value){
         spEditor.putString(keySp,value);
         spEditor.commit();
     }
 
-    public void setSpEmailMitra(String keySP, String value){
+    public void setSpEmailCust(String keySP, String value){
         spEditor.putString(keySP,value);
         spEditor.commit();
     }
