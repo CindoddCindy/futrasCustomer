@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/all_food"
+        android:icon="@drawable/ic_baseline_delete_sweep_24"
+        android:title="Semua Makanan" />
+
+    <item android:id="@+id/save_"
+        android:icon="@drawable/ic_baseline_bookmark_added_24"
+        android:title="Disimpan" />
+
+    <item android:id="@+id/order"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Order" />
+
+    <item android:id="@+id/confirm"
+        android:icon="@drawable/ic_baseline_done_24"
+        android:title="Confirm" />
+
+
+</menu>
