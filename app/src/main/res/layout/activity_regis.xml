@@ -159,6 +159,15 @@
 
         </TextView>
 
+        <ImageView
+            android:id="@+id/iv_regis_have_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/have_account"
+            android:layout_marginTop="50dp">
+
+        </ImageView>
+
 
 
 
