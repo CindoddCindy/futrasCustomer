@@ -4,6 +4,7 @@ import com.google.gson.JsonObject;
 import com.tess.futrash.model.pojo_all_item.AllItemRespon;
 import com.tess.futrash.model.pojo_chart.post_chart.ChartPostRespon;
 import com.tess.futrash.model.pojo_login.LoginCustomerRespon;
+import com.tess.futrash.model.pojo_order.post_order.CustomerPostOrderRespon;
 import com.tess.futrash.model.pojo_regis.RegisCustomerRespon;
 
 import java.util.Map;
@@ -52,7 +53,14 @@ public interface MethodsFactory {
             "Content-Type:application/json"
     })
     @POST("order/users/{id}/orders")
-    Call<ChartPostRespon> orderItem(@Path("id") Long id, @HeaderMap Map<String,String > Map, @Body JsonObject object);
+    Call<CustomerPostOrderRespon> orderItem(@Path("id") Long id, @HeaderMap Map<String,String > Map, @Body JsonObject object);
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @POST("order/users/{id}/orders")
+    Call<CustomerPostOrderRespon> orderItemToBuyer(@Path("id") Long id, @HeaderMap Map<String,String > Map, @Body JsonObject object);
+
 
 
 }

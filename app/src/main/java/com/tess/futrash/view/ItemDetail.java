@@ -88,7 +88,7 @@ public class ItemDetail extends AppCompatActivity {
     //post data
     public void addToChart(){
 
-
+        //ke user id krna chart cuma utk d liat buyer(customer)
         Long id = spHandle.getSpIdUser();
 
         String tokenUser = spHandle.getSpTokenUser();
@@ -96,19 +96,19 @@ public class ItemDetail extends AppCompatActivity {
         token.put("Authorization", "Bearer "+tokenUser);
 
         String jenis_food=textView_nama_makanan.getText().toString();
-    String tdk_dknsumsi_sejak=textView_tidak_dikonsumsi_sejak.getText().toString();
-    String dijual_karena=textView_dijual_karena.getText().toString();
-    String berat_makanan=textView_berat_makanan.getText().toString();
-    String nama_toko=textView_nama_toko.getText().toString();
-    String nama_penjual=textView_nama_penjual.getText().toString();
-    String lokasi_makanan=textView_lokasi_makanan.getText().toString();
-    String harga_makanan=textView_harga_makanan.getText().toString();
-    String saran_penggunann=textView_saran_penggunaan.getText().toString();
-    String kandungan_kimia=textView_kandungan_kimia.getText().toString();
-    String nomor_telepon=textView_phone_num.getText().toString();
-    String date_item=textView_date_item.getText().toString();
-    Long id_user_item=spHandle.getIdMitraForChart();
-    String image_url= "image_url";
+        String tdk_dknsumsi_sejak=textView_tidak_dikonsumsi_sejak.getText().toString();
+        String dijual_karena=textView_dijual_karena.getText().toString();
+        String berat_makanan=textView_berat_makanan.getText().toString();
+        String nama_toko=textView_nama_toko.getText().toString();
+        String nama_penjual=textView_nama_penjual.getText().toString();
+        String lokasi_makanan=textView_lokasi_makanan.getText().toString();
+        String harga_makanan=textView_harga_makanan.getText().toString();
+        String saran_penggunann=textView_saran_penggunaan.getText().toString();
+        String kandungan_kimia=textView_kandungan_kimia.getText().toString();
+        String nomor_telepon=textView_phone_num.getText().toString();
+        String date_item=textView_date_item.getText().toString();
+        Long id_user_item=spHandle.getIdMitraForChart();
+        String image_url= "image_url";
 
 
         JsonObject jsonObject = new JsonObject();
