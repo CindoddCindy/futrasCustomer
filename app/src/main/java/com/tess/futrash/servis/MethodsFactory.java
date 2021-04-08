@@ -1,6 +1,8 @@
 package com.tess.futrash.servis;
 
 import com.google.gson.JsonObject;
+import com.tess.futrash.model.pojo_login.LoginCustomerRespon;
+import com.tess.futrash.model.pojo_regis.RegisCustomerRespon;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -12,7 +14,7 @@ public interface MethodsFactory {
             "Content-Type:application/json"
     })
     @POST("user/signin")
-    Call<foodtrashGetLoginRespon.FoodTrashGetLoginRespon> isLoginValid(@Body JsonObject body);
+    Call<LoginCustomerRespon> isLoginValid(@Body JsonObject body);
 
 
 
@@ -20,6 +22,6 @@ public interface MethodsFactory {
             "Content-Type:application/json"
     })
     @POST("user/signup")
-    Call<String> isRegistration(@Body JsonObject body);
+    Call<RegisCustomerRespon> isRegistration(@Body JsonObject body);
 
 }
