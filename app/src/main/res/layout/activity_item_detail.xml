@@ -136,7 +136,6 @@
                     android:shadowRadius="2"
                     android:shadowDx="1"
                     android:shadowDy="1"
-
                     android:textColor="#BFBABA"
                     android:layout_marginTop="12dp"
                     android:textSize="15dp"
@@ -160,7 +159,7 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <TextView
-                    android:id="@+id/item_detail_lokai"
+                    android:id="@+id/item_detail_lokasi_makanan"
                     android:shadowColor="#F1F5F6"
                     android:shadowRadius="2"
                     android:shadowDx="1"
@@ -346,7 +345,7 @@
 
                 </TextView>
                 <TextView
-                    android:id="@+id/tv_item_detail_kandungan_kimia"
+                    android:id="@+id/item_detail_kandungan_kimia"
                     android:layout_marginBottom="10dp"
                     android:textColor="#BFBABA"
                     android:layout_marginTop="12dp"
@@ -461,7 +460,7 @@
                 </TextView>
                 <TextView
                     android:layout_marginBottom="10dp"
-                    android:id="@+id/tv_detail_item_saran_penggunaan"
+                    android:id="@+id/item_detail_saran_penggunaan"
                     android:textColor="#BFBABA"
                     android:layout_marginTop="12dp"
                     android:textSize="12dp"
@@ -495,7 +494,7 @@
                 </TextView>
                 <TextView
                     android:layout_marginBottom="10dp"
-                    android:id="@+id/tv_item_detail_catatan_tambahan"
+                    android:id="@+id/item_detail_tanggal_item_post"
                     android:textColor="#BFBABA"
                     android:layout_marginTop="12dp"
                     android:textSize="12dp"
@@ -519,7 +518,7 @@
 
         <TextView
             android:textColor="#BFBABA"
-            android:id="@+id/tv_item_detail_btn_add_to_chart"
+            android:id="@+id/item_detail_btn_add_to_chart"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
@@ -536,7 +535,7 @@
         <TextView
             android:textColor="#BFBABA"
             android:layout_marginTop="20dp"
-            android:id="@+id/tv_btn_item_detail_order"
+            android:id="@+id/btn_item_detail_order"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:text="Order"
