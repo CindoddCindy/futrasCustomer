@@ -1,6 +1,8 @@
 package com.tess.futrash.view.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.tess.futrash.R;
 import com.tess.futrash.model.pojo_all_item.Content;
+import com.tess.futrash.shared_pref.SpHandle;
+import com.tess.futrash.view.ItemDetail;
 
 import java.util.List;
 
@@ -19,6 +23,7 @@ public class AdapterAllItemFood extends RecyclerView.Adapter<AdapterAllItemFood.
 
     public Context context;
     public List<Content> contentList;
+
 
     public AdapterAllItemFood(Context context, List<Content> contentList){
         this.context=context;
@@ -47,6 +52,13 @@ public class AdapterAllItemFood extends RecyclerView.Adapter<AdapterAllItemFood.
         holder.cardView_all_item_food.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putLong("id_user",content.getUser().getId());
+
+
+                Intent intent = new Intent(context, ItemDetail.class);
+                intent.putExtras(bundle);
+                context.startActivity(intent);
 
             }
         });

@@ -119,7 +119,6 @@ public class LandingPageFragment extends Fragment {
                     List<Content> content = response.body().getContent();
                    // List<User> users= (List<User>) response.body();
                    // spHandle.setIdMitraItem(SpHandle.SP_ID_MITRA_ITEM, users.get(0).getId());
-                    spHandle.setIdMitraItem(SpHandle.SP_ID_MITRA_ITEM,content.get(14).getUser().getId());
 
                     adapterAllItemFood = new AdapterAllItemFood(getContext(),content);
                     recyclerView.setAdapter(adapterAllItemFood);

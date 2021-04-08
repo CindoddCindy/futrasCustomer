@@ -53,6 +53,12 @@ public class Content {
     @SerializedName("phone_number")
     @Expose
     private String phoneNumber;
+    @SerializedName("item_date")
+    @Expose
+    private String itemDate;
+    @SerializedName("id_mitra")
+    @Expose
+    private long idMitra;
 
     /**
      * No args constructor for use in serialization
@@ -66,8 +72,10 @@ public class Content {
      * @param kandunganKimia
      * @param hargaMakanan
      * @param saranPenggunaan
+     * @param itemDate
      * @param lokasiMakanan
      * @param dijualKarena
+     * @param idMitra
      * @param createdAt
      * @param beratMakanan
      * @param namaPenjual
@@ -79,7 +87,7 @@ public class Content {
      * @param tidakDikonsumsiSejak
      * @param updatedAt
      */
-    public Content(String createdAt, String updatedAt, long id, String imageUrl, String jenisMakanan, String tidakDikonsumsiSejak, String dijualKarena, String beratMakanan, String namaToko, String namaPenjual, String lokasiMakanan, String hargaMakanan, String saranPenggunaan, String kandunganKimia, String phoneNumber) {
+    public Content(String createdAt, String updatedAt, long id, String imageUrl, String jenisMakanan, String tidakDikonsumsiSejak, String dijualKarena, String beratMakanan, String namaToko, String namaPenjual, String lokasiMakanan, String hargaMakanan, String saranPenggunaan, String kandunganKimia, String phoneNumber, String itemDate, long idMitra) {
         super();
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
@@ -96,6 +104,8 @@ public class Content {
         this.saranPenggunaan = saranPenggunaan;
         this.kandunganKimia = kandunganKimia;
         this.phoneNumber = phoneNumber;
+        this.itemDate = itemDate;
+        this.idMitra = idMitra;
     }
 
     public String getCreatedAt() {
@@ -216,6 +226,22 @@ public class Content {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getItemDate() {
+        return itemDate;
+    }
+
+    public void setItemDate(String itemDate) {
+        this.itemDate = itemDate;
+    }
+
+    public long getIdMitra() {
+        return idMitra;
+    }
+
+    public void setIdMitra(long idMitra) {
+        this.idMitra = idMitra;
     }
 
 }
