@@ -54,7 +54,18 @@ public class AdapterAllItemFood extends RecyclerView.Adapter<AdapterAllItemFood.
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
                 bundle.putLong("id_user",content.getUser().getId());
-
+                bundle.putString("jm", content.getJenisMakanan());
+                bundle.putString("tds",content.getTidakDikonsumsiSejak());
+                bundle.putString("dk",content.getDijualKarena());
+                bundle.putString("bm",content.getBeratMakanan());
+                bundle.putString("nt",content.getNamaToko());
+                bundle.putString("np",content.getNamaPenjual());
+                bundle.putString("lm",content.getLokasiMakanan());
+                bundle.putString("hm",content.getHargaMakanan());
+                bundle.putString("sp",content.getSaranPenggunaan());
+                bundle.putString("kk",content.getKandunganKimia());
+                bundle.putString("pn",content.getPhoneNumber());
+                bundle.putString("ca",content.getCreatedAt());
 
                 Intent intent = new Intent(context, ItemDetail.class);
                 intent.putExtras(bundle);
