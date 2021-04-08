@@ -43,9 +43,16 @@ public interface MethodsFactory {
     @Headers({
             "Content-Type:application/json"
     })
-    @GET("charts/users/{id}/charts")
+    @POST("charts/users/{id}/charts")
     Call<ChartPostRespon> addToChart(@Path("id") Long id, @HeaderMap Map<String,String > Map, @Body JsonObject object);
 
+
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @POST("order/users/{id}/orders")
+    Call<ChartPostRespon> orderItem(@Path("id") Long id, @HeaderMap Map<String,String > Map, @Body JsonObject object);
 
 
 }

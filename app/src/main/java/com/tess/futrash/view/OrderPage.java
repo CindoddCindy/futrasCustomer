@@ -13,4 +13,15 @@ public class OrderPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_page);
     }
+
+    //send to seller id
+    //get id from mitra id sp
+    public void orderToSeller(){
+
+    }
+
+    //get id from id when regis
+    public void orderToBuyer(){
+
+    }
 }
