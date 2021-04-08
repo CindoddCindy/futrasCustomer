@@ -26,6 +26,8 @@ public class ItemDetail extends AppCompatActivity {
             Bundle bundle = getIntent().getExtras();
             //textView_jenis_makanan.setText(bundle.getString("jm"));
             spHandle.setIdMitraItem(SpHandle.SP_ID_MITRA_ITEM,bundle.getLong(("id_user")));
+
+            //kirim ini kalo mau save ke chart, dan kirim ini kalo dari chart ke order
             spHandle.setSpIdUserForChart(SpHandle.SP_ID_USER_FOR_CHART,bundle.getLong("id_user"));
 
         }
