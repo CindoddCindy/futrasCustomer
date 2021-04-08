@@ -1,13 +1,19 @@
 package com.tess.futrash.servis;
 
 import com.google.gson.JsonObject;
+import com.tess.futrash.model.pojo_all_item.AllItemRespon;
 import com.tess.futrash.model.pojo_login.LoginCustomerRespon;
 import com.tess.futrash.model.pojo_regis.RegisCustomerRespon;
 
+import java.util.Map;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.GET;
+import retrofit2.http.HeaderMap;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 
 public interface MethodsFactory {
     @Headers({
@@ -23,5 +29,13 @@ public interface MethodsFactory {
     })
     @POST("user/signup")
     Call<RegisCustomerRespon> isRegistration(@Body JsonObject body);
+
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @GET("item/AllItems")
+    Call<AllItemRespon> getAllItem(@HeaderMap Map<String,String > Map);
+
 
 }
