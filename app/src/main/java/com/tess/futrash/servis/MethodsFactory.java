@@ -62,5 +62,11 @@ public interface MethodsFactory {
     Call<CustomerPostOrderRespon> orderItemToBuyer(@Path("id") Long id, @HeaderMap Map<String,String > Map, @Body JsonObject object);
 
 
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @GET("confirm/users/{id}/confirm")
+    Call<CustomerPostOrderRespon> getConfirm(@Path("id") Long id, @HeaderMap Map<String,String > Map);
+
 
 }

@@ -308,7 +308,7 @@
 
                         <TextView
                             android:gravity="center"
-                            android:id="@+id/tv_confirm_harga_makanan"
+                            android:id="@+id/tv_confirm_shipping_type"
                             android:textColor="#BFBABA"
                             android:padding="5dp"
                             android:textSize="12dp"
