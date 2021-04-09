@@ -8,7 +8,7 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cv_order_order"
+        android:id="@+id/cv_order_item"
         android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/tv_order_nama_makanan"
+                    android:id="@+id/tv_order_item_nama_penjual"
                     android:gravity="center"
                     android:padding="2dp"
                     android:textStyle="bold"
@@ -109,19 +109,19 @@
 
 
                         <TextView
-                            android:id="@+id/tv_order_cust_name"
+                            android:id="@+id/tv_order_item_jenis_makanan"
                             android:padding="5dp"
                             android:textSize="12dp"
                             android:textColor="#BFBABA"
                             android:drawablePadding="5dp"
-                            android:drawableLeft="@drawable/ic_baseline_person_24"
+                            android:drawableLeft="@drawable/ic_baseline_local_dining_24"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Customer Name"
                             />
 
                         <TextView
-                            android:id="@+id/tv_order_cust_location"
+                            android:id="@+id/tv_order_item_lokasi_makanan"
                             android:padding="5dp"
                             android:textSize="12dp"
                             android:textColor="#BFBABA"
@@ -133,7 +133,7 @@
                             />
 
                         <TextView
-                            android:id="@+id/tv_order_cust_phone"
+                            android:id="@+id/tv_order_item_phone_makanan"
                             android:padding="5dp"
                             android:textSize="12dp"
                             android:textColor="#BFBABA"
@@ -145,7 +145,7 @@
                             />
 
                         <TextView
-                            android:id="@+id/tv_order_cust_shipp_type"
+                            android:id="@+id/tv_order_item_jenis_pengiriman"
                             android:padding="5dp"
                             android:textSize="12dp"
                             android:textColor="#BFBABA"
@@ -157,6 +157,7 @@
                             />
 
                         <TextView
+                            android:id="@+id/tv_order_item_tanggal_order"
                             android:padding="5dp"
                             android:textSize="12dp"
                             android:textColor="#BFBABA"
