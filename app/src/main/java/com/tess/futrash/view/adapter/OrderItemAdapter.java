@@ -1,6 +1,8 @@
 package com.tess.futrash.view.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.tess.futrash.R;
 import com.tess.futrash.model.pojo_order.get_order.Content;
+import com.tess.futrash.view.ItemDetail;
 
 import java.util.List;
 import java.util.PrimitiveIterator;
@@ -50,6 +53,29 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.Orde
         holder.cardView_order_item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Bundle bundle = new Bundle();
+                bundle.putString("cn",content.getCustomerName());
+                bundle.putString("cl",content.getCustomerLocation());
+                bundle.putString("cp",content.getCustomerPhone());
+                bundle.putString("jp",content.getShippingType());
+                bundle.putString("jm", content.getJenisMakanan());
+                bundle.putString("tds",content.getTidakDikonsumsiSejak());
+                bundle.putString("dk",content.getDijualKarena());
+                bundle.putString("bm",content.getBeratMakanan());
+                bundle.putString("nt",content.getNamaToko());
+                bundle.putString("np",content.getNamaPenjual());
+                bundle.putString("lm",content.getLokasiMakanan());
+                bundle.putString("hm",content.getHargaMakanan());
+                bundle.putString("sp",content.getSaranPenggunaan());
+                bundle.putString("kk",content.getKandunganKimia());
+                bundle.putString("pn",content.getPhoneNumber());
+                bundle.putString("di",content.getItemDate());
+                bundle.putString("ca",content.getCreatedAt());
+
+                Intent intent = new Intent(context, ItemDetail.class);
+                intent.putExtras(bundle);
+                context.startActivity(intent);
 
             }
         });
