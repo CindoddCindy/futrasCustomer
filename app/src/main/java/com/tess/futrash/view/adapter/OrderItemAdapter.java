@@ -59,7 +59,7 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.Orde
 
     @Override
     public int getItemCount() {
-        return 0;
+        return contentList.size();
     }
 
     public class OrderItemChild extends RecyclerView.ViewHolder{
