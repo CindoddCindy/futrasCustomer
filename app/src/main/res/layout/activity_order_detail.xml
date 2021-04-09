@@ -153,6 +153,17 @@
             </TextView>
 
             <TextView
+                android:id="@+id/tv_detail_order_lokasi_cust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bakron_kembali"
+                android:padding="5dp"
+                android:textColor="#BFBABA">
+
+            </TextView>
+
+            <TextView
                 android:textColor="#BFBABA"
                 android:drawablePadding="5dp"
                 android:text="Lokasi Customer"
@@ -162,16 +173,6 @@
 
             </TextView>
 
-            <TextView
-                android:id="@+id/tv_detail_order_lokasi_cust"
-                android:textColor="#BFBABA"
-                android:layout_margin="10dp"
-                android:padding="5dp"
-                android:background="@drawable/bakron_kembali"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-            </TextView>
             <TextView
                 android:textColor="#BFBABA"
                 android:drawablePadding="5dp"
@@ -606,7 +607,7 @@
                         android:textStyle="bold"
                         android:gravity="left"
                         android:drawablePadding="5dp"
-                        android:text="Tanggan Item Dipost"
+                        android:text="Tanggal Item Dipost"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         >
@@ -670,7 +671,7 @@
 
             </TextView>
             <TextView
-                android:id="@+id/tv_detail_ordeer_hapus_order"
+                android:id="@+id/tv_detail_order_hapus_order"
                 android:textColor="#BFBABA"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
