@@ -77,10 +77,11 @@ public class ItemDetail extends AppCompatActivity {
             textView_kandungan_kimia.setText(bundle.getString("kk"));
             textView_phone_num.setText(bundle.getString("pn"));
             textView_date_item.setText(bundle.getString("ca"));
-            //pake id ini untuk order link
+
+            //pake id ini untuk order link(dinamis id)
             spHandle.setIdMitraItem(SpHandle.SP_ID_MITRA_ITEM,bundle.getLong(("id_user")));
 
-            //kirim ini kalo mau save ke chart, dan kirim ini kalo dari chart ke order
+            //utk save ke table chart (statis id, ambilnya nnti dri data chart)
             spHandle.setSpIdUserForChart(SpHandle.SP_ID_USER_FOR_CHART,bundle.getLong("id_user"));
 
         }

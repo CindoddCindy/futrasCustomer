@@ -23,6 +23,8 @@ public class SpHandle {
 
     public static final String SP_ID_USER_FOR_CHART="spIdForChart";
 
+    public static final  String SP_CHART_TO_ORDER_ID="spChartToOrderId";
+
     public static final String SP_HAVE_LOGIN = "spHaveLogin";
 
     SharedPreferences sp;
@@ -49,6 +51,11 @@ public class SpHandle {
     }
 
     public void setSpIdUserForChart(String keySp, Long value){
+        spEditor.putLong(keySp,value);
+        spEditor.commit();
+    }
+
+    public  void  setSpChartToOrderId(String keySp, Long value){
         spEditor.putLong(keySp,value);
         spEditor.commit();
     }
@@ -142,6 +149,10 @@ public class SpHandle {
 
     public Long getIdMitraForChart(){
         return  sp.getLong(SP_ID_USER_FOR_CHART, 0);
+    }
+
+    public  Long getSPIdChartToOrder(){
+        return  sp.getLong(SP_CHART_TO_ORDER_ID,0);
     }
 
     public Long getSpIdItem(){
