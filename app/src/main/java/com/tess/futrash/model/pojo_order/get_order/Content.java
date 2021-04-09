@@ -68,6 +68,9 @@ public class Content {
     @SerializedName("item_date")
     @Expose
     private String itemDate;
+    @SerializedName("user")
+    @Expose
+    private User user;
 
     /**
      * No args constructor for use in serialization
@@ -97,9 +100,10 @@ public class Content {
      * @param namaToko
      * @param id
      * @param tidakDikonsumsiSejak
+     * @param user
      * @param updatedAt
      */
-    public Content(String createdAt, String updatedAt, long id, String imageUrl, String customerName, String customerLocation, String customerPhone, String shippingType, String jenisMakanan, String tidakDikonsumsiSejak, String dijualKarena, String beratMakanan, String namaToko, String namaPenjual, String lokasiMakanan, String hargaMakanan, String saranPenggunaan, String kandunganKimia, String phoneNumber, String itemDate) {
+    public Content(String createdAt, String updatedAt, long id, String imageUrl, String customerName, String customerLocation, String customerPhone, String shippingType, String jenisMakanan, String tidakDikonsumsiSejak, String dijualKarena, String beratMakanan, String namaToko, String namaPenjual, String lokasiMakanan, String hargaMakanan, String saranPenggunaan, String kandunganKimia, String phoneNumber, String itemDate, User user) {
         super();
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
@@ -121,6 +125,7 @@ public class Content {
         this.kandunganKimia = kandunganKimia;
         this.phoneNumber = phoneNumber;
         this.itemDate = itemDate;
+        this.user = user;
     }
 
     public String getCreatedAt() {
@@ -281,6 +286,14 @@ public class Content {
 
     public void setItemDate(String itemDate) {
         this.itemDate = itemDate;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
 }

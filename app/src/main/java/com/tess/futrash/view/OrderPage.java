@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -63,6 +64,13 @@ public class OrderPage extends AppCompatActivity {
         editText_phone_customer=findViewById(R.id.et_order_page_customer_phone);
         editText_lokasi_customer=findViewById(R.id.et_order_page_lokasi_customer);
         editText_shipping_type=findViewById(R.id.et_order_page_jenis_pengiriman);
+
+        textView_btn_order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     //send to seller id
@@ -268,5 +276,13 @@ public class OrderPage extends AppCompatActivity {
         });
 
 
+    }
+
+    public void getOrderFromChart(){
+
+    }
+
+    public void getOrderFromItem(){
+        
     }
 }
