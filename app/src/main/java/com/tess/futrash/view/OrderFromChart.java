@@ -278,7 +278,31 @@ public class OrderFromChart extends AppCompatActivity {
 
     }
 
-    public void getOrderFromChart(){
+    public void getDataOrderFromChart(){
+
+        if(getIntent().getExtras()!=null){
+            /**
+             * Jika Bundle ada, ambil data dari Bundle
+             */
+            Bundle bundle = getIntent().getExtras();
+            //textView_jenis_makanan.setText(bundle.getString("jm"));
+
+            textView_jenis_makanan.setText(bundle.getString("jm"));
+            textView_tidak_dikonsumsi_sejak.setText(bundle.getString("tds"));
+            textView_dijual_karena.setText(bundle.getString("dk"));
+            textView_berat_makanan.setText(bundle.getString("bm"));
+            textView_nama_toko.setText(bundle.getString("nt"));
+            textView_nama_penjual.setText(bundle.getString("np"));
+            textView_lokasi_makanan.setText(bundle.getString("lm"));
+            textView_harga_makanan.setText(bundle.getString("hm"));
+            textView_saran_penggunaan.setText(bundle.getString("sp"));
+            textView_kandungan_kimia.setText(bundle.getString("kk"));
+            textView_phone_number.setText(bundle.getString("pn"));
+            textView_date_item.setText(bundle.getString("ca"));
+
+
+        }
+
 
     }
 

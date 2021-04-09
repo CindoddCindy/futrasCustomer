@@ -76,10 +76,29 @@ public class ChartDetail extends AppCompatActivity {
 
     }
 
-    public void orderItemFromChart(){
-        Intent intent = new Intent(ChartDetail.this, OrderFromChart.class);
-        startActivity(intent);
-        finish();
+    public void sendToOrderPage(){
+
+            Bundle bundle = new Bundle();
+            //bundle.putLong("id_user",content.getUser().getId());
+            bundle.putString("jm", textView_jenis_makanan.getText().toString());
+            bundle.putString("tds",textView_tidak_dikonsumsi_sejak.getText().toString());
+            bundle.putString("dk",textView_dijual_karena.getText().toString());
+            bundle.putString("bm",textView_berat_makanan.getText().toString());
+            bundle.putString("nt",textView_nama_toko.getText().toString());
+            bundle.putString("np",textView_nama_penjual.getText().toString());
+            bundle.putString("lm",textView_lokasi_makanan.getText().toString());
+            bundle.putString("hm",textView_harga_makanan.getText().toString());
+            bundle.putString("sp",textView_saran_penggunaan.getText().toString());
+            bundle.putString("kk",textView_kandungan_kimia.getText().toString());
+            bundle.putString("pn",textView_phone_number.getText().toString());
+            bundle.putString("ca",textView_date_item.getText().toString());
+
+            Intent intent = new Intent(ChartDetail.this, OrderFromChart.class);
+            intent.putExtras(bundle);
+            startActivity(intent);
+
+
+
 
     }
 }
