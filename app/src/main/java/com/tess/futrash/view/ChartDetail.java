@@ -2,6 +2,7 @@ package com.tess.futrash.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -76,6 +77,9 @@ public class ChartDetail extends AppCompatActivity {
     }
 
     public void orderItemFromChart(){
+        Intent intent = new Intent(ChartDetail.this, OrderPage.class);
+        startActivity(intent);
+        finish();
 
     }
 }

@@ -2,8 +2,11 @@ package com.tess.futrash.servis;
 
 import com.google.gson.JsonObject;
 import com.tess.futrash.model.pojo_all_item.AllItemRespon;
+import com.tess.futrash.model.pojo_chart.get_chart.ChartGetRespon;
 import com.tess.futrash.model.pojo_chart.post_chart.ChartPostRespon;
+import com.tess.futrash.model.pojo_confirmation.get_confirm.GetConfirmRespon;
 import com.tess.futrash.model.pojo_login.LoginCustomerRespon;
+import com.tess.futrash.model.pojo_order.get_order.GetOrderRespon;
 import com.tess.futrash.model.pojo_order.post_order.CustomerPostOrderRespon;
 import com.tess.futrash.model.pojo_regis.RegisCustomerRespon;
 
@@ -66,7 +69,21 @@ public interface MethodsFactory {
             "Content-Type:application/json"
     })
     @GET("confirm/users/{id}/confirm")
-    Call<CustomerPostOrderRespon> getConfirm(@Path("id") Long id, @HeaderMap Map<String,String > Map);
+    Call<GetConfirmRespon> getConfirm(@Path("id") Long id, @HeaderMap Map<String,String > Map);
+
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @GET("charts/users/{id}/charts")
+    Call<ChartGetRespon> getChart(@Path("id") Long id, @HeaderMap Map<String,String > Map);
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @GET("order/users/{id}/orders")
+    Call<GetOrderRespon> getOrder(@Path("id") Long id, @HeaderMap Map<String,String > Map);
+
 
 
 }
