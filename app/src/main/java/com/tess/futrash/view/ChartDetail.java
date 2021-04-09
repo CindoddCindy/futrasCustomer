@@ -35,4 +35,16 @@ public class ChartDetail extends AppCompatActivity {
         textView_hapus_chart=findViewById(R.id.tv_chart_detail_btn_hapus_chart);
         textView_order=findViewById(R.id.tv_chart_detail_btn_order);
     }
+
+    public void showChartDetail(){
+
+    }
+
+    public  void deleteChart(){
+
+    }
+
+    public void orderItemFromChart(){
+
+    }
 }
