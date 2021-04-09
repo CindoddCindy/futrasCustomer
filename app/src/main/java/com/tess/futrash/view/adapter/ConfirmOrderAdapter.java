@@ -38,9 +38,9 @@ public class ConfirmOrderAdapter extends RecyclerView.Adapter<ConfirmOrderAdapte
             super(itemView);
             cardView_confirm=itemView.findViewById(R.id.cv_confirm_confirm);
             textView_nama_penjual=itemView.findViewById(R.id.tv_confirm_nama_penjual);
-            textView_order_status=itemView.findViewById(R.id.tv_conf_satatus_order);
-            textView_catatn_mitra=itemView.findViewById(R.id.tv_conf_catatan_mitra);
-            textView_tanggal_confirm=itemView.findViewById(R.id.tv_conf_tanggal_confirm);
+            textView_order_status=itemView.findViewById(R.id.tv_confirm_satatus_order);
+            textView_catatn_mitra=itemView.findViewById(R.id.tv_confirm_catatan_mitra);
+            textView_tanggal_confirm=itemView.findViewById(R.id.tv_confirm_tanggal_confirm);
             textView_nama_makanan=itemView.findViewById(R.id.tv_confirm_jenis_makanan);
             textView_lokasi_makanan=itemView.findViewById(R.id.tv_confirm_lokasi_makanan);
             textView_phone_penjual=itemView.findViewById(R.id.tv_confirm_phone_makanan);

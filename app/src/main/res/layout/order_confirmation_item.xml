@@ -53,7 +53,7 @@
                         android:textColor="#BFBABA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Nama Customer"
+                        android:text="Nama Mitra"
                         />
 
 
@@ -144,7 +144,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
                             <TextView
-                                android:id="@+id/tv_conf_satatus_order"
+                                android:id="@+id/tv_confirm_satatus_order"
                                 android:shadowColor="#E6ECED"
                                 android:shadowRadius="2"
                                 android:shadowDx="1"
@@ -160,7 +160,7 @@
 
                             </TextView>
                             <TextView
-                                android:id="@+id/tv_conf_catatan_mitra"
+                                android:id="@+id/tv_confirm_catatan_mitra"
                                 android:shadowColor="#E6ECED"
                                 android:shadowRadius="2"
                                 android:shadowDx="1"
@@ -176,7 +176,7 @@
 
                             </TextView>
                             <TextView
-                                android:id="@+id/tv_conf_tanggal_confirm"
+                                android:id="@+id/tv_confirm_tanggal_confirm"
                                 android:shadowColor="#E6ECED"
                                 android:shadowRadius="2"
                                 android:shadowDx="1"
