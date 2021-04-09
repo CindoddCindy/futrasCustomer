@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import com.google.gson.JsonObject;
 import com.tess.futrash.R;
-import com.tess.futrash.model.pojo_chart.post_chart.ChartPostRespon;
 import com.tess.futrash.model.pojo_order.post_order.CustomerPostOrderRespon;
 import com.tess.futrash.servis.MethodsFactory;
 import com.tess.futrash.servis.RetrofitHandle;
@@ -24,46 +23,46 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class OrderPage extends AppCompatActivity {
+public class OrderFromChart extends AppCompatActivity {
 
     private TextView textView_jenis_makanan, textView_tidak_dikonsumsi_sejak,
-    textView_dijual_karena, textView_berat_makanan, textView_nama_toko,
-    textView_nama_penjual, textView_lokasi_makanan, textView_harga_makanan,
-    textView_saran_penggunaan, textView_kandungan_kimia, textView_phone_number,
-    textView_date_item;
+            textView_dijual_karena, textView_berat_makanan, textView_nama_toko,
+            textView_nama_penjual, textView_lokasi_makanan, textView_harga_makanan,
+            textView_saran_penggunaan, textView_kandungan_kimia, textView_phone_number,
+            textView_date_item;
 
     private TextView textView_btn_order;
 
     private EditText editText_nama_customer, editText_lokasi_customer, editText_phone_customer,
-    editText_shipping_type;
+            editText_shipping_type;
 
     private SpHandle spHandle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_order_page);
+        setContentView(R.layout.activity_order_from_chart);
 
-        spHandle= new SpHandle(OrderPage.this);
-        textView_jenis_makanan=findViewById(R.id.tv_order_page_nama_makanan);
-        textView_tidak_dikonsumsi_sejak=findViewById(R.id.tv_order_page_tidak_dikonsumsi_sejak);
-        textView_dijual_karena=findViewById(R.id.tv_order_page_diposting_karena);
-        textView_berat_makanan=findViewById(R.id.tv_order_page_berat_makanan);
-        textView_nama_toko=findViewById(R.id.tv_order_page_nama_toko);
-        textView_nama_penjual=findViewById(R.id.tv_order_page_nama_penjual);
-        textView_lokasi_makanan=findViewById(R.id.tv_order_page_lokasi_makanan);
-        textView_harga_makanan=findViewById(R.id.tv_order_page_harga_food);
-        textView_saran_penggunaan=findViewById(R.id.tv_order_page_saran_penggunaan);
-        textView_kandungan_kimia=findViewById(R.id.tv_order_page_kandungan_kimia);
-        textView_phone_number=findViewById(R.id.tv_order_page_phone_makanan);
-        textView_date_item=findViewById(R.id.tv_order_page_tanggal_dipost);
+        spHandle= new SpHandle(OrderFromChart.this);
+        textView_jenis_makanan=findViewById(R.id.tv_order_page_fr_chart_nama_makanan);
+        textView_tidak_dikonsumsi_sejak=findViewById(R.id.tv_order_page_fr_chart_tidak_dikonsumsi_sejak);
+        textView_dijual_karena=findViewById(R.id.tv_order_page_fr_chart_diposting_karena);
+        textView_berat_makanan=findViewById(R.id.tv_order_page_fr_chart_berat_makanan);
+        textView_nama_toko=findViewById(R.id.tv_order_page_fr_chart_nama_toko);
+        textView_nama_penjual=findViewById(R.id.tv_order_page_fr_chart_nama_penjual);
+        textView_lokasi_makanan=findViewById(R.id.tv_order_page_fr_chart_lokasi_makanan);
+        textView_harga_makanan=findViewById(R.id.tv_order_page_fr_chart_harga_food);
+        textView_saran_penggunaan=findViewById(R.id.tv_order_page_fr_chart_saran_penggunaan);
+        textView_kandungan_kimia=findViewById(R.id.tv_order_page_fr_chart_kandungan_kimia);
+        textView_phone_number=findViewById(R.id.tv_order_page_fr_chart_phone_makanan);
+        textView_date_item=findViewById(R.id.tv_order_page_fr_chart_tanggal_dipost);
 
-        textView_btn_order=findViewById(R.id.tv_order_page_btn_order_item);
+        textView_btn_order=findViewById(R.id.tv_order_page_fr_chart_btn_order_item);
 
-        editText_nama_customer=findViewById(R.id.et_order_page_customer_name);
-        editText_phone_customer=findViewById(R.id.et_order_page_customer_phone);
-        editText_lokasi_customer=findViewById(R.id.et_order_page_lokasi_customer);
-        editText_shipping_type=findViewById(R.id.et_order_page_jenis_pengiriman);
+        editText_nama_customer=findViewById(R.id.et_order_page_fr_chart_customer_name);
+        editText_phone_customer=findViewById(R.id.et_order_page_fr_chart_customer_phone);
+        editText_lokasi_customer=findViewById(R.id.et_order_page_fr_chart_lokasi_customer);
+        editText_shipping_type=findViewById(R.id.et_order_page_fr_chart_jenis_pengiriman);
 
         textView_btn_order.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,11 +72,12 @@ public class OrderPage extends AppCompatActivity {
         });
     }
 
+
     //send to seller id
     //get id from mitra id sp
     public void orderToSeller(){
 
-        Long id = spHandle.getIdMitra();
+        Long id = spHandle.getSPIdChartToOrder();
 
         String tokenUser = spHandle.getSpTokenUser();
         Map<String,String> token = new HashMap<>();
@@ -137,7 +137,7 @@ public class OrderPage extends AppCompatActivity {
             @Override
             public void onResponse(Call<CustomerPostOrderRespon> call, Response<CustomerPostOrderRespon> response) {
                 if(response.isSuccessful()){
-                    Intent intent = new Intent(OrderPage.this,BottomNavigation.class);
+                    Intent intent = new Intent(OrderFromChart.this,BottomNavigation.class);
                     startActivity(intent);
 
 
@@ -148,17 +148,17 @@ public class OrderPage extends AppCompatActivity {
                     // error case
                     switch (response.code()) {
                         case 404:
-                            Toast.makeText(OrderPage.this, " not found", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(OrderFromChart.this, " not found", Toast.LENGTH_SHORT).show();
                             break;
                         case 500:
-                            Toast.makeText(OrderPage.this, "server error", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(OrderFromChart.this, "server error", Toast.LENGTH_SHORT).show();
                             break;
                         case 401:
-                            Toast.makeText(OrderPage.this, " sorry can't authenticated, try again", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(OrderFromChart.this, " sorry can't authenticated, try again", Toast.LENGTH_SHORT).show();
                             break;
 
                         default:
-                            Toast.makeText(OrderPage.this, "unknown error ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(OrderFromChart.this, "unknown error ", Toast.LENGTH_SHORT).show();
                             break;
                     }
                 }
@@ -167,7 +167,7 @@ public class OrderPage extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<CustomerPostOrderRespon> call, Throwable t) {
-                Toast.makeText(OrderPage.this, "network failure :( inform the user and possibly retry ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(OrderFromChart.this, "network failure :( inform the user and possibly retry ", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -240,7 +240,7 @@ public class OrderPage extends AppCompatActivity {
             @Override
             public void onResponse(Call<CustomerPostOrderRespon> call, Response<CustomerPostOrderRespon> response) {
                 if(response.isSuccessful()){
-                    Intent intent = new Intent(OrderPage.this,BottomNavigation.class);
+                    Intent intent = new Intent(OrderFromChart.this,BottomNavigation.class);
                     startActivity(intent);
 
 
@@ -251,17 +251,17 @@ public class OrderPage extends AppCompatActivity {
                     // error case
                     switch (response.code()) {
                         case 404:
-                            Toast.makeText(OrderPage.this, " not found", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(OrderFromChart.this, " not found", Toast.LENGTH_SHORT).show();
                             break;
                         case 500:
-                            Toast.makeText(OrderPage.this, "server error", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(OrderFromChart.this, "server error", Toast.LENGTH_SHORT).show();
                             break;
                         case 401:
-                            Toast.makeText(OrderPage.this, " sorry can't authenticated, try again", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(OrderFromChart.this, " sorry can't authenticated, try again", Toast.LENGTH_SHORT).show();
                             break;
 
                         default:
-                            Toast.makeText(OrderPage.this, "unknown error ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(OrderFromChart.this, "unknown error ", Toast.LENGTH_SHORT).show();
                             break;
                     }
                 }
@@ -270,7 +270,7 @@ public class OrderPage extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<CustomerPostOrderRespon> call, Throwable t) {
-                Toast.makeText(OrderPage.this, "network failure :( inform the user and possibly retry ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(OrderFromChart.this, "network failure :( inform the user and possibly retry ", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -278,9 +278,10 @@ public class OrderPage extends AppCompatActivity {
 
     }
 
+    public void getOrderFromChart(){
 
-
-    public void getOrderFromItem(){
-        
     }
+
+
+
 }

@@ -77,7 +77,7 @@ public class ChartDetail extends AppCompatActivity {
     }
 
     public void orderItemFromChart(){
-        Intent intent = new Intent(ChartDetail.this, OrderPage.class);
+        Intent intent = new Intent(ChartDetail.this, OrderFromChart.class);
         startActivity(intent);
         finish();
 
