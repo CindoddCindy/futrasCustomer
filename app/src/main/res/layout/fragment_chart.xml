@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:padding="5dp"
     android:layout_margin="5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.fragment.ChartFragment">
@@ -43,8 +43,8 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:padding="5dp"
                     android:layout_gravity="center"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
                     android:src="@drawable/profile_example">
 
                 </de.hdodenhof.circleimageview.CircleImageView>
