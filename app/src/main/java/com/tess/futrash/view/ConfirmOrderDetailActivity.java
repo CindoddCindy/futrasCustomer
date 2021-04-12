@@ -44,6 +44,8 @@ public class ConfirmOrderDetailActivity extends AppCompatActivity {
 
             }
         });
+
+        showConfirmDetail();
     }
 
     public  void showConfirmDetail(){

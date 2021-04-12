@@ -99,11 +99,13 @@ public class ConfirmFragment extends Fragment {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(linearLayoutManager);
 
+        getConfirmList();
+
         return view;
     }
 
 
-    public void getItemList(){
+    public void getConfirmList(){
         Long id = spHandle.getSpIdUser();
 
         String tokenUser = spHandle.getSpTokenUser();

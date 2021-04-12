@@ -118,8 +118,6 @@ public class OrderFromChart extends AppCompatActivity {
         String shipping_type=editText_shipping_type.getText().toString();
 
 
-
-
         JsonObject jsonObject = new JsonObject();
 
         jsonObject.addProperty("image_url", image_url);
@@ -142,10 +140,6 @@ public class OrderFromChart extends AppCompatActivity {
         jsonObject.addProperty("shipping_type",shipping_type );
 
 
-
-
-
-
         MethodsFactory methodsFactory =  RetrofitHandle.getRetrofitLink().create(MethodsFactory.class);
         Call<CustomerPostOrderRespon> call= methodsFactory.orderItemToBuyer(id, token,jsonObject);
         call.enqueue(new Callback<CustomerPostOrderRespon>() {
@@ -154,7 +148,6 @@ public class OrderFromChart extends AppCompatActivity {
                 if(response.isSuccessful()){
                     Intent intent = new Intent(OrderFromChart.this,BottomNavigation.class);
                     startActivity(intent);
-
 
 
                 }
@@ -186,9 +179,6 @@ public class OrderFromChart extends AppCompatActivity {
 
             }
         });
-
-
-
 
     }
 
