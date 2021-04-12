@@ -12,7 +12,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Futrash">
+        android:theme="@style/Theme.Futrash"
+        android:usesCleartextTraffic="true"
+        >
         <activity android:name=".view.OrderFromChart"></activity>
         <activity android:name=".view.ConfirmOrderDetailActivity" />
         <activity android:name=".view.OrderDetail" />
