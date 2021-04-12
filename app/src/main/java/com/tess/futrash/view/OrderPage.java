@@ -84,6 +84,8 @@ public class OrderPage extends AppCompatActivity {
             }
         });
 
+        detailOrderFromItem();
+
 
     }
 
@@ -287,7 +289,7 @@ public class OrderPage extends AppCompatActivity {
 
 
 
-    public void getOrderFromItem(){
+    public void detailOrderFromItem(){
         if(getIntent().getExtras()!=null){
             /**
              * Jika Bundle ada, ambil data dari Bundle
