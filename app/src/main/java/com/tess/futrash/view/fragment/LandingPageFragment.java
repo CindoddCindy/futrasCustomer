@@ -96,6 +96,8 @@ public class LandingPageFragment extends Fragment {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(linearLayoutManager);
 
+        getItemList();
+
         return view;
 
     }
