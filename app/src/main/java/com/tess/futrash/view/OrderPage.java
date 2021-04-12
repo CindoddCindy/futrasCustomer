@@ -68,9 +68,23 @@ public class OrderPage extends AppCompatActivity {
         textView_btn_order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(editText_nama_customer.getText().toString().isEmpty()&&editText_phone_customer.getText().toString().isEmpty()&& editText_lokasi_customer.getText().toString().isEmpty()&&editText_shipping_type.getText().toString().isEmpty()){
+                    editText_nama_customer.setError("field kosong");
+                    editText_phone_customer.setError("field kosong");
+                    editText_lokasi_customer.setError("field kosong");
+                    editText_shipping_type.setError("field kosong");
+
+
+                }else {
+                    metodKirim();
+
+
+                }
 
             }
         });
+
+
     }
 
     //send to seller id
@@ -103,8 +117,6 @@ public class OrderPage extends AppCompatActivity {
         String shipping_type=editText_shipping_type.getText().toString();
 
 
-
-
         JsonObject jsonObject = new JsonObject();
 
         jsonObject.addProperty("image_url", image_url);
@@ -125,10 +137,6 @@ public class OrderPage extends AppCompatActivity {
         jsonObject.addProperty("customer_location", lokasi_customer);
         jsonObject.addProperty("customer_phone", phone_customer);
         jsonObject.addProperty("shipping_type",shipping_type );
-
-
-
-
 
 
         MethodsFactory methodsFactory =  RetrofitHandle.getRetrofitLink().create(MethodsFactory.class);
@@ -171,7 +179,6 @@ public class OrderPage extends AppCompatActivity {
 
             }
         });
-
 
 
 
@@ -309,5 +316,10 @@ public class OrderPage extends AppCompatActivity {
 
         }
         
+    }
+
+    public  void metodKirim(){
+        orderToOwnSelf();
+        orderToSeller();
     }
 }

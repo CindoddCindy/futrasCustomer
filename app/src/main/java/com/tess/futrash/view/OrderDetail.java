@@ -50,6 +50,9 @@ public class OrderDetail extends AppCompatActivity {
         textView_btn_hbngi_penjual=findViewById(R.id.tv_detail_order_hubungi_mitra);
         textView_btn_delete=findViewById(R.id.tv_detail_order_hapus_order);
         textView_btn_back=findViewById(R.id.tv_detail_order_back_btn);
+
+        showItemDetail();
+
     }
 
     public  void showItemDetail(){
