@@ -131,6 +131,8 @@ public class Regis extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<RegisCustomerRespon> call, Throwable t) {
+                t.printStackTrace();
+                t.getMessage();
                 Toast.makeText(Regis.this, "network failure :( inform the user and possibly retry ", Toast.LENGTH_SHORT).show();
 
             }
