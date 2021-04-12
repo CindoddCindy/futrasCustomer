@@ -67,9 +67,24 @@ public class OrderFromChart extends AppCompatActivity {
         textView_btn_order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(editText_nama_customer.getText().toString().isEmpty()&&editText_phone_customer.getText().toString().isEmpty()&& editText_lokasi_customer.getText().toString().isEmpty()&&editText_shipping_type.getText().toString().isEmpty()){
+                    editText_nama_customer.setError("field kosong");
+                    editText_phone_customer.setError("field kosong");
+                    editText_lokasi_customer.setError("field kosong");
+                    editText_shipping_type.setError("field kosong");
+
+
+                }else {
+                    metodKirim();
+
+
+                }
+
 
             }
         });
+
+        getDataOrderFromChart();
     }
 
 
@@ -305,6 +320,12 @@ public class OrderFromChart extends AppCompatActivity {
 
 
     }
+
+    public  void  metodKirim(){
+        orderToOwnSelf();
+        orderToSeller();
+    }
+
 
 
 
