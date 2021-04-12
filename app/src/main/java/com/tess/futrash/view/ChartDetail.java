@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.tess.futrash.R;
@@ -42,6 +43,23 @@ public class ChartDetail extends AppCompatActivity {
         textView_date_item=findViewById(R.id.tv_chart_detail_tanggal_item_dipost);
         textView_hapus_chart=findViewById(R.id.tv_chart_detail_btn_hapus_chart);
         textView_order=findViewById(R.id.tv_chart_detail_btn_order);
+
+        textView_hapus_chart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        textView_order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendToOrderPage();
+
+            }
+        });
+
+        showChartDetail();
     }
 
     public void showChartDetail(){

@@ -97,11 +97,13 @@ public class ChartFragment extends Fragment {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(linearLayoutManager);
 
+        getChartList();
+
         return view;
 
     }
 
-    public void getItemList(){
+    public void getChartList(){
         Long id = spHandle.getSpIdUser();
 
         String tokenUser = spHandle.getSpTokenUser();

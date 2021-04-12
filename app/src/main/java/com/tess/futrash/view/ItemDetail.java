@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -57,34 +58,26 @@ public class ItemDetail extends AppCompatActivity {
         textView_btn_add_to_chart=findViewById(R.id.item_detail_btn_add_to_chart);
         textView_btn_add_to_order=findViewById(R.id.btn_item_detail_order);
 
+        textView_btn_add_to_chart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addToChart();
 
-        if(getIntent().getExtras()!=null){
-            /**
-             * Jika Bundle ada, ambil data dari Bundle
-             */
-            Bundle bundle = getIntent().getExtras();
-            //textView_jenis_makanan.setText(bundle.getString("jm"));
+            }
+        });
 
-            textView_nama_makanan.setText(bundle.getString("jm"));
-            textView_tidak_dikonsumsi_sejak.setText(bundle.getString("tds"));
-            textView_dijual_karena.setText(bundle.getString("dk"));
-            textView_berat_makanan.setText(bundle.getString("bm"));
-            textView_nama_toko.setText(bundle.getString("nt"));
-            textView_nama_penjual.setText(bundle.getString("np"));
-            textView_lokasi_makanan.setText(bundle.getString("lm"));
-            textView_harga_makanan.setText(bundle.getString("hm"));
-            textView_saran_penggunaan.setText(bundle.getString("sp"));
-            textView_kandungan_kimia.setText(bundle.getString("kk"));
-            textView_phone_num.setText(bundle.getString("pn"));
-            textView_date_item.setText(bundle.getString("ca"));
+        textView_btn_add_to_order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addToOrder();
 
-            //pake id ini untuk order link(dinamis id)
-            spHandle.setIdMitraItem(SpHandle.SP_ID_MITRA_ITEM,bundle.getLong(("id_user")));
+            }
+        });
 
-            //utk save ke table chart (statis id, ambilnya nnti dri data chart)
-            spHandle.setSpIdUserForChart(SpHandle.SP_ID_USER_FOR_CHART,bundle.getLong("id_user"));
+        dataFromAdapter();
 
-        }
+
+
     }
     //post data
     public void addToChart(){
@@ -199,6 +192,38 @@ public class ItemDetail extends AppCompatActivity {
         Intent intent = new Intent(ItemDetail.this, OrderPage.class);
         intent.putExtras(bundle);
         startActivity(intent);
+
+    }
+
+    public  void dataFromAdapter(){
+
+        if(getIntent().getExtras()!=null){
+            /**
+             * Jika Bundle ada, ambil data dari Bundle
+             */
+            Bundle bundle = getIntent().getExtras();
+            //textView_jenis_makanan.setText(bundle.getString("jm"));
+
+            textView_nama_makanan.setText(bundle.getString("jm"));
+            textView_tidak_dikonsumsi_sejak.setText(bundle.getString("tds"));
+            textView_dijual_karena.setText(bundle.getString("dk"));
+            textView_berat_makanan.setText(bundle.getString("bm"));
+            textView_nama_toko.setText(bundle.getString("nt"));
+            textView_nama_penjual.setText(bundle.getString("np"));
+            textView_lokasi_makanan.setText(bundle.getString("lm"));
+            textView_harga_makanan.setText(bundle.getString("hm"));
+            textView_saran_penggunaan.setText(bundle.getString("sp"));
+            textView_kandungan_kimia.setText(bundle.getString("kk"));
+            textView_phone_num.setText(bundle.getString("pn"));
+            textView_date_item.setText(bundle.getString("ca"));
+
+            //pake id ini untuk order link(dinamis id)
+            spHandle.setIdMitraItem(SpHandle.SP_ID_MITRA_ITEM,bundle.getLong(("id_user")));
+
+            //utk save ke table chart (statis id, ambilnya nnti dri data chart)
+            spHandle.setSpIdUserForChart(SpHandle.SP_ID_USER_FOR_CHART,bundle.getLong("id_user"));
+
+        }
 
     }
 
