@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Futrash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#445753</item>
-        <item name="colorPrimaryVariant">#768C8A</item>
+        <item name="colorPrimary">#232740</item>
+        <item name="colorPrimaryVariant">#232740</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
