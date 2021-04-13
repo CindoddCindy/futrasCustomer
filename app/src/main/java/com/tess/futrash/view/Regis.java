@@ -65,6 +65,8 @@ public class Regis extends AppCompatActivity {
 
             }
         });
+
+
     }
 
     public void regisCustomer(){

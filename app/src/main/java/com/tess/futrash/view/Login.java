@@ -54,6 +54,12 @@ public class Login extends AppCompatActivity {
 
             }
         });
+
+        if (spHandle.getHaveLogin()){
+            startActivity(new Intent(Login.this, BottomNavigation.class)
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
+            finish();
+        }
     }
 
     private void btnLogin(){
