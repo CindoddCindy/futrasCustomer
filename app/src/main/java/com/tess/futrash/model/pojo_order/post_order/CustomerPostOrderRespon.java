@@ -68,6 +68,9 @@ public class CustomerPostOrderRespon {
     @SerializedName("item_date")
     @Expose
     private String itemDate;
+    @SerializedName("id_buyer")
+    @Expose
+    private long idBuyer;
     @SerializedName("user")
     @Expose
     private User user;
@@ -96,6 +99,7 @@ public class CustomerPostOrderRespon {
      * @param customerPhone
      * @param jenisMakanan
      * @param phoneNumber
+     * @param idBuyer
      * @param imageUrl
      * @param namaToko
      * @param id
@@ -103,7 +107,7 @@ public class CustomerPostOrderRespon {
      * @param user
      * @param updatedAt
      */
-    public CustomerPostOrderRespon(String createdAt, String updatedAt, long id, String imageUrl, String customerName, String customerLocation, String customerPhone, String shippingType, String jenisMakanan, String tidakDikonsumsiSejak, String dijualKarena, String beratMakanan, String namaToko, String namaPenjual, String lokasiMakanan, String hargaMakanan, String saranPenggunaan, String kandunganKimia, String phoneNumber, String itemDate, User user) {
+    public CustomerPostOrderRespon(String createdAt, String updatedAt, long id, String imageUrl, String customerName, String customerLocation, String customerPhone, String shippingType, String jenisMakanan, String tidakDikonsumsiSejak, String dijualKarena, String beratMakanan, String namaToko, String namaPenjual, String lokasiMakanan, String hargaMakanan, String saranPenggunaan, String kandunganKimia, String phoneNumber, String itemDate, long idBuyer, User user) {
         super();
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
@@ -125,6 +129,7 @@ public class CustomerPostOrderRespon {
         this.kandunganKimia = kandunganKimia;
         this.phoneNumber = phoneNumber;
         this.itemDate = itemDate;
+        this.idBuyer = idBuyer;
         this.user = user;
     }
 
@@ -286,6 +291,14 @@ public class CustomerPostOrderRespon {
 
     public void setItemDate(String itemDate) {
         this.itemDate = itemDate;
+    }
+
+    public long getIdBuyer() {
+        return idBuyer;
+    }
+
+    public void setIdBuyer(long idBuyer) {
+        this.idBuyer = idBuyer;
     }
 
     public User getUser() {

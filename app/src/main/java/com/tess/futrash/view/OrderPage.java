@@ -119,6 +119,7 @@ public class OrderPage extends AppCompatActivity {
         String shipping_type=editText_shipping_type.getText().toString();
 
 
+        Long id_customer= spHandle.getSpIdUser();
         JsonObject jsonObject = new JsonObject();
 
         jsonObject.addProperty("image_url", image_url);
@@ -139,6 +140,7 @@ public class OrderPage extends AppCompatActivity {
         jsonObject.addProperty("customer_location", lokasi_customer);
         jsonObject.addProperty("customer_phone", phone_customer);
         jsonObject.addProperty("shipping_type",shipping_type );
+        jsonObject.addProperty("id_buyer",id_customer);
 
 
         MethodsFactory methodsFactory =  RetrofitHandle.getRetrofitLink().create(MethodsFactory.class);
@@ -237,6 +239,7 @@ public class OrderPage extends AppCompatActivity {
         jsonObject.addProperty("customer_location", lokasi_customer);
         jsonObject.addProperty("customer_phone", phone_customer);
         jsonObject.addProperty("shipping_type",shipping_type );
+        jsonObject.addProperty("id_buyer",id);
 
 
 
