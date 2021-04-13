@@ -244,7 +244,7 @@ public class OrderPage extends AppCompatActivity {
 
 
         MethodsFactory methodsFactory =  RetrofitHandle.getRetrofitLink().create(MethodsFactory.class);
-        Call<CustomerPostOrderRespon> call= methodsFactory.orderItemToBuyer(id, token,jsonObject);
+        Call<CustomerPostOrderRespon> call= methodsFactory.orderItemToMe(id, token,jsonObject);
         call.enqueue(new Callback<CustomerPostOrderRespon>() {
             @Override
             public void onResponse(Call<CustomerPostOrderRespon> call, Response<CustomerPostOrderRespon> response) {

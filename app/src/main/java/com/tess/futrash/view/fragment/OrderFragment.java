@@ -97,6 +97,8 @@ public class OrderFragment extends Fragment {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(linearLayoutManager);
 
+        getMyOrderData();
+
         return view;
 
     }

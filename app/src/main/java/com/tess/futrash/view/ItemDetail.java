@@ -176,6 +176,7 @@ public class ItemDetail extends AppCompatActivity {
 
         Bundle bundle = new Bundle();
         //bundle.putLong("id_user",content.getUser().getId());
+        bundle.putLong("id_user", spHandle.getIdMitra());
         bundle.putString("jm", textView_nama_makanan.getText().toString());
         bundle.putString("tds",textView_tidak_dikonsumsi_sejak.getText().toString());
         bundle.putString("dk",textView_dijual_karena.getText().toString());

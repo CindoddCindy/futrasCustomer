@@ -56,7 +56,7 @@ public interface MethodsFactory {
             "Content-Type:application/json"
     })
     @POST("order/users/{id}/orders")
-    Call<CustomerPostOrderRespon> orderItem(@Path("id") Long id, @HeaderMap Map<String,String > Map, @Body JsonObject object);
+    Call<CustomerPostOrderRespon> orderItemToMe(@Path("id") Long id, @HeaderMap Map<String,String > Map, @Body JsonObject object);
 
     @Headers({
             "Content-Type:application/json"

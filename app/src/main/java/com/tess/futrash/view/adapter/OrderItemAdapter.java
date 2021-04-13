@@ -101,7 +101,7 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.Orde
             textView_shipping_type=itemView.findViewById(R.id.tv_order_item_jenis_pengiriman);
             textView_phone=itemView.findViewById(R.id.tv_order_item_phone_makanan);
             textView_lokasi_makakan=itemView.findViewById(R.id.tv_order_item_lokasi_makanan);
-            textView_nama_makanan=itemView.findViewById(R.id.tv_order_page_nama_makanan);
+            textView_nama_makanan=itemView.findViewById(R.id.tv_order_item_jenis_makanan);
             textView_nama_penjual=itemView.findViewById(R.id.tv_order_item_nama_penjual);
             textView_hapus=itemView.findViewById(R.id.tv_order_item_hapus);
 
