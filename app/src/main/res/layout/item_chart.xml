@@ -2,24 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:layout_margin="2dp"
     android:layout_width="match_parent"
-    android:padding="5dp"
-    android:layout_margin="5dp"
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_chart_item"
-        android:padding="15dp"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="2dp"
-        android:layout_margin="5dp"
+        android:layout_margin="2dp"
         app:cardMaxElevation="5dp">
 
 
         <LinearLayout
             android:background="#232740"
-            android:padding="15dp"
+            android:padding="5dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:layout_width="match_parent"
@@ -34,7 +33,7 @@
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/tv_chart_nama_penjual"
-                    android:padding="5dp"
+                    android:padding="2dp"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textSize="10dp"
@@ -48,10 +47,10 @@
 
 
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:padding="5dp"
+                    android:padding="2dp"
                     android:layout_gravity="center"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:src="@drawable/example_image">
 
                 </de.hdodenhof.circleimageview.CircleImageView>
@@ -79,7 +78,7 @@
                         />
 
                     <LinearLayout
-                        android:padding="5dp"
+                        android:padding="2dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
@@ -92,9 +91,9 @@
                             android:shadowDy="1"
                             android:textColor="#EDE5E5"
                             android:text="Tanggal Post"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:textSize="12dp"
+                            android:gravity="left"
+                            android:textStyle="normal"
+                            android:textSize="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             >
@@ -104,15 +103,11 @@
                         <TextView
                             android:id="@+id/tv_chart_tanggal_post"
                             android:layout_weight="1"
-                            android:shadowColor="#F0F5F6"
-                            android:shadowRadius="2"
-                            android:shadowDx="1"
-                            android:shadowDy="1"
                             android:textColor="#EDE5E5"
                             android:text="Tanggal Post"
-                            android:gravity="center"
+                            android:gravity="left"
                             android:textStyle="normal"
-                            android:textSize="12dp"
+                            android:textSize="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             >
@@ -144,7 +139,7 @@
 
 
                 <LinearLayout
-                    android:padding="5dp"
+                    android:padding="2dp"
                     android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -158,7 +153,7 @@
                         android:layout_weight="1">
                         <TextView
                             android:id="@+id/tv_chart_jenis_makanan"
-                            android:textSize="12dp"
+                            android:textSize="10dp"
                             android:textColor="#E7F8D3"
                             android:drawablePadding="5dp"
                             android:drawableLeft="@drawable/ic_baseline_local_dining_24"
@@ -168,7 +163,7 @@
                             />
                         <TextView
                             android:id="@+id/tv_chart_lokasi_makanan"
-                            android:textSize="12dp"
+                            android:textSize="10dp"
                             android:textColor="#E7F8D3"
                             android:drawablePadding="5dp"
                             android:drawableLeft="@drawable/ic_baseline_location_on_24"
@@ -188,7 +183,7 @@
                         <TextView
                             android:id="@+id/tv_chart_phone"
                             android:textColor="#E7F8D3"
-                            android:textSize="12dp"
+                            android:textSize="10dp"
                             android:drawablePadding="5dp"
                             android:drawableLeft="@drawable/ic_baseline_phone_24"
                             android:layout_width="wrap_content"
@@ -197,7 +192,7 @@
                             />
                         <TextView
                             android:id="@+id/tv_chart_harga"
-                            android:textSize="12dp"
+                            android:textSize="10dp"
                             android:textColor="#E7F8D3"
                             android:drawablePadding="5dp"
                             android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
