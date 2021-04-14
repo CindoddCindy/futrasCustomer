@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="10dp"
-    android:layout_margin="5dp"
+    android:padding="2dp"
+    android:layout_margin="2dp"
 
     tools:context=".view.fragment.OrderFragment">
 
@@ -16,17 +16,17 @@
 
 
         <androidx.cardview.widget.CardView
-            android:padding="5dp"
+            android:padding="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardElevation="5dp"
-            android:layout_margin="5dp"
+            android:layout_margin="2dp"
             app:cardMaxElevation="5dp">
 
 
             <LinearLayout
                 android:background="#232740"
-                android:padding="5dp"
+                android:padding="2dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_width="match_parent"
@@ -43,10 +43,10 @@
 
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:padding="5dp"
+                        android:padding="2dp"
                         android:layout_gravity="center"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:src="@drawable/profile_example">
 
                     </de.hdodenhof.circleimageview.CircleImageView>
@@ -68,7 +68,7 @@
                         android:text="Chandra Skatlovski"
                         android:gravity="center"
                         android:textStyle="bold"
-                        android:textSize="15dp"
+                        android:textSize="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         >
@@ -84,7 +84,7 @@
                         android:text="chandraskatlovski@gmail.com"
                         android:gravity="center"
                         android:textStyle="normal"
-                        android:textSize="12dp"
+                        android:textSize="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         >
@@ -102,9 +102,27 @@
 
         </androidx.cardview.widget.CardView>
 
+        <TextView
+            android:layout_marginTop="5dp"
+            android:shadowColor="#F0F5F6"
+            android:shadowRadius="2"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:textColor="#232740"
+            android:text="Order"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </TextView>
+
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_order"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
