@@ -27,9 +27,9 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:scaleType="centerCrop"
             android:layout_gravity="center"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/futrash"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/food_trash_3rd"
             tools:layout_editor_absoluteX="139dp"
             tools:layout_editor_absoluteY="239dp">
 
@@ -50,7 +50,7 @@
 
             android:textColor="#BFBABA"
             android:layout_marginTop="12dp"
-            android:textSize="15dp"
+            android:textSize="12dp"
             android:gravity="center"
             android:drawablePadding="5dp"
             android:text="Regis"
@@ -161,7 +161,7 @@
             android:layout_marginRight="10dp"
             android:text="Regis"
             android:gravity="center"
-            android:textSize="15dp"
+            android:textSize="12dp"
             android:textStyle="bold"
             android:padding="10dp"
             android:background="@drawable/bakron_kembali"
@@ -176,11 +176,12 @@
 
 
         <ImageView
+            android:layout_gravity="center"
             android:id="@+id/iv_regis_have_account"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
             android:src="@drawable/have_account"
-            android:layout_marginTop="50dp">
+            android:layout_marginTop="30dp">
 
         </ImageView>
 
