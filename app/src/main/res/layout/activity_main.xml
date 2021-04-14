@@ -21,7 +21,7 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/futrash"
+        android:src="@drawable/food_trash_3rd"
         tools:layout_editor_absoluteX="139dp"
         tools:layout_editor_absoluteY="239dp">
 
@@ -38,7 +38,7 @@
         android:textColor="#FAFFFE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Futrash"
+        android:text="Food Trash"
         android:textSize="15dp"
          />
 
@@ -57,12 +57,12 @@
          />
 
         <TextView
-            android:textStyle="normal"
+            android:textStyle="italic"
             android:padding="10dp"
-            android:textSize="12dp"
+            android:textSize="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="For Customer "
+            android:text=" Food Trash Aplikasi Android Untuk Pembeli "
             android:textColor="#F1EBEB"
             />
 
