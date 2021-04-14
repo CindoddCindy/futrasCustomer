@@ -46,10 +46,10 @@
 
 
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:padding="5dp"
+                    android:padding="2dp"
                     android:layout_gravity="center"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:src="@drawable/example_image">
 
                 </de.hdodenhof.circleimageview.CircleImageView>
@@ -109,8 +109,8 @@
 
                         <TextView
                             android:id="@+id/tv_order_item_jenis_makanan"
-                            android:padding="5dp"
-                            android:textSize="12dp"
+                            android:padding="2dp"
+                            android:textSize="10dp"
                             android:textColor="#BFBABA"
                             android:drawablePadding="5dp"
                             android:drawableLeft="@drawable/ic_baseline_local_dining_24"
@@ -121,8 +121,8 @@
 
                         <TextView
                             android:id="@+id/tv_order_item_lokasi_makanan"
-                            android:padding="5dp"
-                            android:textSize="12dp"
+                            android:padding="2dp"
+                            android:textSize="10dp"
                             android:textColor="#BFBABA"
                             android:drawablePadding="5dp"
                             android:drawableLeft="@drawable/ic_baseline_location_on_24"
@@ -133,8 +133,8 @@
 
                         <TextView
                             android:id="@+id/tv_order_item_phone_makanan"
-                            android:padding="5dp"
-                            android:textSize="12dp"
+                            android:padding="2dp"
+                            android:textSize="10dp"
                             android:textColor="#BFBABA"
                             android:drawablePadding="5dp"
                             android:drawableLeft="@drawable/ic_baseline_phone_24"
@@ -145,8 +145,8 @@
 
                         <TextView
                             android:id="@+id/tv_order_item_jenis_pengiriman"
-                            android:padding="5dp"
-                            android:textSize="12dp"
+                            android:padding="2dp"
+                            android:textSize="10dp"
                             android:textColor="#BFBABA"
                             android:drawablePadding="5dp"
                             android:drawableLeft="@drawable/ic_baseline_local_shipping_24"
@@ -157,8 +157,8 @@
 
                         <TextView
                             android:id="@+id/tv_order_item_tanggal_order"
-                            android:padding="5dp"
-                            android:textSize="12dp"
+                            android:padding="2dp"
+                            android:textSize="10dp"
                             android:textColor="#BFBABA"
                             android:drawablePadding="5dp"
                             android:drawableLeft="@drawable/ic_baseline_date_range_24"
