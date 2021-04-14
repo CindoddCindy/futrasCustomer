@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.tess.futrash.R;
 import com.tess.futrash.model.pojo_chart.get_chart.Content;
+import com.tess.futrash.view.ChartDetail;
 import com.tess.futrash.view.ItemDetail;
 
 import java.util.List;
@@ -65,7 +66,7 @@ public class ChartItemAdapter extends RecyclerView.Adapter<ChartItemAdapter.Char
                 bundle.putString("pn",content.getPhoneNumber());
                 bundle.putString("di",content.getItemDate());
 
-                Intent intent = new Intent(context, ItemDetail.class);
+                Intent intent = new Intent(context, ChartDetail.class);
                 intent.putExtras(bundle);
                 context.startActivity(intent);
             }

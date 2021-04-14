@@ -171,8 +171,10 @@
                                 android:id="@+id/tv_confirm_tanggal_confirm"
                                 android:text="Tanggal Order"
                                 android:gravity="left"
+                                android:textColor="#EDE5E5"
+
                                 android:textStyle="normal"
-                                android:textSize="10dp"
+                                android:textSize="7dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 >
@@ -299,7 +301,7 @@
                             android:textSize="10dp"
                             android:padding="2dp"
                             android:drawablePadding="5dp"
-                            android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
+                            android:drawableLeft="@drawable/ic_baseline_local_shipping_24"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Harga Makanan"

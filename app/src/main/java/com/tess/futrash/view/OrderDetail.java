@@ -45,6 +45,7 @@ public class OrderDetail extends AppCompatActivity {
         textView_harga_makanan=findViewById(R.id.tv_detail_order_harga_makananan);
         textView_saran_penggunaan=findViewById(R.id.tv_detail_order_saran_penggunaan);
         textView_kandungan_kimia=findViewById(R.id.tv_detail_order_kandungan_kimia);
+        textView_date_item=findViewById(R.id.tv_detail_order_date_item_post);
 
         textView_btn_edit=findViewById(R.id.tv_detail_order_edit_order);
         textView_btn_hbngi_penjual=findViewById(R.id.tv_detail_order_hubungi_mitra);

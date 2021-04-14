@@ -9,6 +9,10 @@
     android:gravity="center"
     android:background="#232740"
     tools:context=".view.ConfirmOrderDetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
 
     <LinearLayout
         android:layout_marginTop="10dp"
@@ -40,6 +44,7 @@
             android:orientation="vertical"
             >
             <LinearLayout
+                android:layout_margin="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -383,6 +388,8 @@
         </LinearLayout>
 
     </LinearLayout>
+    </ScrollView>
+
 
 
 

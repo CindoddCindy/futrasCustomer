@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.tess.futrash.R;
 import com.tess.futrash.model.pojo_order.get_order.Content;
 import com.tess.futrash.view.ItemDetail;
+import com.tess.futrash.view.OrderDetail;
 
 import java.util.List;
 import java.util.PrimitiveIterator;
@@ -73,7 +74,7 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.Orde
                 bundle.putString("di",content.getItemDate());
                 bundle.putString("ca",content.getCreatedAt());
 
-                Intent intent = new Intent(context, ItemDetail.class);
+                Intent intent = new Intent(context, OrderDetail.class);
                 intent.putExtras(bundle);
                 context.startActivity(intent);
 
