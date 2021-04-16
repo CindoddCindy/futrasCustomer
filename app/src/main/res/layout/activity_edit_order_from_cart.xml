@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -122,7 +122,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/et_order_page_customer_name"
+                android:id="@+id/et_order_page_fr_chart_edit_customer_name"
                 android:textColor="#BFBABA"
                 android:layout_margin="10dp"
                 android:padding="5dp"
@@ -144,7 +144,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/et_order_page_lokasi_customer"
+                android:id="@+id/et_order_page_fr_chart_edit_lokasi_customer"
                 android:textColor="#BFBABA"
                 android:layout_margin="10dp"
                 android:padding="5dp"
@@ -165,7 +165,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/et_order_page_customer_phone"
+                android:id="@+id/et_order_page_fr_chart_edit_customer_phone"
                 android:textColor="#BFBABA"
                 android:layout_margin="10dp"
                 android:padding="5dp"
@@ -185,7 +185,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/et_order_page_jenis_pengiriman"
+                android:id="@+id/et_order_page_fr_chart_edit_jenis_pengiriman"
                 android:textColor="#BFBABA"
                 android:layout_margin="10dp"
                 android:padding="5dp"
@@ -197,7 +197,7 @@
             </EditText>
 
             <TextView
-                android:id="@+id/tv_order_page_btn_order_item"
+                android:id="@+id/tv_order_page_fr_chart_edit_btn_order_item"
                 android:textColor="#BFBABA"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
@@ -214,7 +214,7 @@
             </TextView>
 
             <ImageView
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -239,7 +239,7 @@
                     android:orientation="vertical"
                     android:layout_weight="1">
                     <TextView
-                        android:id="@+id/tv_order_page_nama_makanan"
+                        android:id="@+id/tv_order_page_fr_chart_edit_nama_makanan"
                         android:shadowColor="#E6ECED"
                         android:shadowRadius="2"
                         android:shadowDx="1"
@@ -290,7 +290,7 @@
                     android:layout_weight="1">
                     <TextView
                         android:shadowColor="#F1F5F6"
-                        android:id="@+id/tv_order_page_lokasi_makanan"
+                        android:id="@+id/tv_order_page_fr_chart_edit_lokasi_makanan"
                         android:shadowRadius="2"
                         android:shadowDx="1"
                         android:shadowDy="1"
@@ -311,7 +311,7 @@
 
                     <TextView
                         android:shadowColor="#F1F5F6"
-                        android:id="@+id/tv_order_page_phone_makanan"
+                        android:id="@+id/tv_order_page_fr_chart_edit_phone_makanan"
                         android:shadowRadius="2"
                         android:shadowDx="1"
                         android:shadowDy="1"
@@ -353,7 +353,7 @@
                     android:orientation="vertical"
                     android:layout_weight="1">
                     <TextView
-                        android:id="@+id/tv_order_page_nama_penjual"
+                        android:id="@+id/tv_order_page_fr_chart_edit_nama_penjual"
                         android:shadowColor="#F1F5F6"
                         android:shadowRadius="2"
                         android:shadowDx="1"
@@ -372,7 +372,7 @@
                     </TextView>
 
                     <TextView
-                        android:id="@+id/tv_order_page_tidak_dikonsumsi_sejak"
+                        android:id="@+id/tv_order_page_fr_chart_edit_tidak_dikonsumsi_sejak"
                         android:layout_marginBottom="10dp"
                         android:textColor="#BFBABA"
                         android:layout_marginTop="5dp"
@@ -406,7 +406,7 @@
 
                     </TextView>
                     <TextView
-                        android:id="@+id/tv_order_page_diposting_karena"
+                        android:id="@+id/tv_order_page_fr_chart_edit_diposting_karena"
                         android:layout_marginBottom="10dp"
                         android:textColor="#BFBABA"
                         android:layout_marginTop="5dp"
@@ -439,7 +439,7 @@
 
                     </TextView>
                     <TextView
-                        android:id="@+id/tv_order_page_berat_makanan"
+                        android:id="@+id/tv_order_page_fr_chart_edit_berat_makanan"
                         android:layout_marginBottom="10dp"
                         android:textColor="#BFBABA"
                         android:layout_marginTop="5dp"
@@ -472,7 +472,7 @@
 
                     </TextView>
                     <TextView
-                        android:id="@+id/tv_order_page_kandungan_kimia"
+                        android:id="@+id/tv_order_page_fr_chart_edit_kandungan_kimia"
                         android:layout_marginBottom="10dp"
                         android:textColor="#BFBABA"
                         android:layout_marginTop="5dp"
@@ -516,7 +516,7 @@
 
                     </TextView>
                     <TextView
-                        android:id="@+id/tv_order_page_nama_toko"
+                        android:id="@+id/tv_order_page_fr_chart_edit_nama_toko"
                         android:layout_marginBottom="10dp"
                         android:textColor="#BFBABA"
                         android:layout_marginTop="5dp"
@@ -551,7 +551,7 @@
 
                     </TextView>
                     <TextView
-                        android:id="@+id/tv_order_page_harga_food"
+                        android:id="@+id/tv_order_page_fr_chart_edit_harga_food"
                         android:layout_marginBottom="10dp"
                         android:textColor="#BFBABA"
                         android:layout_marginTop="5dp"
@@ -584,7 +584,7 @@
 
                     </TextView>
                     <TextView
-                        android:id="@+id/tv_order_page_saran_penggunaan"
+                        android:id="@+id/tv_order_page_fr_chart_edit_saran_penggunaan"
                         android:layout_marginBottom="10dp"
                         android:textColor="#BFBABA"
                         android:layout_marginTop="5dp"
@@ -618,7 +618,7 @@
 
                     </TextView>
                     <TextView
-                        android:id="@+id/tv_order_page_tanggal_dipost"
+                        android:id="@+id/tv_order_page_fr_chart_edit_tanggal_dipost"
                         android:layout_marginBottom="10dp"
                         android:textColor="#BFBABA"
                         android:layout_marginTop="5dp"
@@ -656,5 +656,4 @@
 
 
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
