@@ -10,14 +10,18 @@ import com.tess.futrash.model.pojo_order.get_order.GetOrderRespon;
 import com.tess.futrash.model.pojo_order.post_order.CustomerPostOrderRespon;
 import com.tess.futrash.model.pojo_regis.RegisCustomerRespon;
 
+import org.json.JSONObject;
+
 import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.HeaderMap;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
 public interface MethodsFactory {
@@ -83,6 +87,47 @@ public interface MethodsFactory {
     })
     @GET("order/users/{id}/orders")
     Call<GetOrderRespon> getOrder(@Path("id") Long id, @HeaderMap Map<String,String > Map);
+
+
+    //edit delete
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @PUT("")
+    Call<String> EditOrderToMe(@Path("id") Long id, @HeaderMap Map<String,String > Map, @Body JsonObject body);
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @PUT("")
+    Call<String> EditOrderToSeller(@Path("id") Long id, @HeaderMap Map<String,String > Map, @Body JSONObject body);
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @DELETE("")
+    Call<String> HapusOrderToMe(@Path("id") Long id, @HeaderMap Map<String,String > Map);
+
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @DELETE("")
+    Call<String> HapusOrderToSeller(@Path("id") Long id, @HeaderMap Map<String,String > Map);
+
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @DELETE("")
+    Call<String> HapusConfirm(@Path("id") Long id, @HeaderMap Map<String,String > Map);
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @DELETE("")
+    Call<String> HapusCartr(@Path("id") Long id, @HeaderMap Map<String,String > Map);
 
 
 
