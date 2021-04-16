@@ -95,39 +95,39 @@ public interface MethodsFactory {
             "Content-Type:application/json"
     })
     @PUT("")
-    Call<String> EditOrderToMe(@Path("id") Long id, @HeaderMap Map<String,String > Map, @Body JsonObject body);
+    Call<String> editOrderToMe(@Path("id") Long id,@Path("id") Long id_order, @HeaderMap Map<String,String > Map, @Body JsonObject body);
 
     @Headers({
             "Content-Type:application/json"
     })
     @PUT("")
-    Call<String> EditOrderToSeller(@Path("id") Long id, @HeaderMap Map<String,String > Map, @Body JSONObject body);
+    Call<String> editOrderToSeller(@Path("id") Long id,@Path("id") Long id_order, @HeaderMap Map<String,String > Map, @Body JsonObject body);
 
     @Headers({
             "Content-Type:application/json"
     })
     @DELETE("")
-    Call<String> HapusOrderToMe(@Path("id") Long id, @HeaderMap Map<String,String > Map);
-
-
-    @Headers({
-            "Content-Type:application/json"
-    })
-    @DELETE("")
-    Call<String> HapusOrderToSeller(@Path("id") Long id, @HeaderMap Map<String,String > Map);
+    Call<String> deleteOrderToMe(@Path("id") Long id, @Path("id") Long id_order_item,@HeaderMap Map<String,String > Map);
 
 
     @Headers({
             "Content-Type:application/json"
     })
     @DELETE("")
-    Call<String> HapusConfirm(@Path("id") Long id, @HeaderMap Map<String,String > Map);
+    Call<String> deleteOrderToSeller(@Path("id") Long id,@Path("id") Long id_order_data, @HeaderMap Map<String,String > Map);
+
 
     @Headers({
             "Content-Type:application/json"
     })
     @DELETE("")
-    Call<String> HapusCartr(@Path("id") Long id, @HeaderMap Map<String,String > Map);
+    Call<String> deleteConfirm(@Path("id") Long id, @Path("id") Long id_cart,@HeaderMap Map<String,String > Map);
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @DELETE("")
+    Call<String> deleteCart(@Path("id") Long id, @Path("id") Long id_confirm,@HeaderMap Map<String,String > Map);
 
 
 

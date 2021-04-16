@@ -221,6 +221,8 @@ public class ItemDetail extends AppCompatActivity {
             //pake id ini untuk order link(dinamis id)
             spHandle.setIdMitraItem(SpHandle.SP_ID_MITRA_ITEM,bundle.getLong(("id_user")));
 
+            spHandle.setSpIdItem(SpHandle.SP_ID_ITEM,bundle.getLong("id_product"));
+
             //utk save ke table chart (statis id, ambilnya nnti dri data chart)
             spHandle.setSpIdUserForChart(SpHandle.SP_ID_USER_FOR_CHART,bundle.getLong("id_user"));
 

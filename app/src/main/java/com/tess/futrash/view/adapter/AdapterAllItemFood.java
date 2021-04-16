@@ -53,6 +53,7 @@ public class AdapterAllItemFood extends RecyclerView.Adapter<AdapterAllItemFood.
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
+                bundle.putLong("id_product",content.getId());
                 bundle.putLong("id_user",content.getUser().getId());
                 bundle.putString("jm", content.getJenisMakanan());
                 bundle.putString("tds",content.getTidakDikonsumsiSejak());

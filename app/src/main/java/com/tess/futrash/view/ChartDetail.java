@@ -6,9 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.tess.futrash.R;
+import com.tess.futrash.servis.MethodsFactory;
+import com.tess.futrash.servis.RetrofitHandle;
 import com.tess.futrash.shared_pref.SpHandle;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class ChartDetail extends AppCompatActivity {
 
@@ -72,7 +82,7 @@ public class ChartDetail extends AppCompatActivity {
             //textView_jenis_makanan.setText(bundle.getString("jm"));
 
             spHandle.setIdMitraItem(SpHandle.SP_CHART_TO_ORDER_ID,bundle.getLong(("id_user"))); // pakai id ini jika mau order dr chart ke order page
-
+            spHandle.setSpIdChart(SpHandle.SP_ID_CHART,bundle.getLong("id_chart"));
             textView_jenis_makanan.setText(bundle.getString("jm"));
             textView_tidak_dikonsumsi_sejak.setText(bundle.getString("tds"));
             textView_dijual_karena.setText(bundle.getString("dk"));
@@ -98,6 +108,7 @@ public class ChartDetail extends AppCompatActivity {
 
             Bundle bundle = new Bundle();
             //bundle.putLong("id_user",content.getUser().getId());
+
             bundle.putString("jm", textView_jenis_makanan.getText().toString());
             bundle.putString("tds",textView_tidak_dikonsumsi_sejak.getText().toString());
             bundle.putString("dk",textView_dijual_karena.getText().toString());
@@ -119,4 +130,63 @@ public class ChartDetail extends AppCompatActivity {
 
 
     }
+
+
+    public void deleteCart(){
+
+        Long id = spHandle.getIdMitra();
+
+        String tokenUser = spHandle.getSpTokenUser();
+        Map<String,String> token = new HashMap<>();
+        token.put("Authorization", "Bearer "+tokenUser);
+        Long id_customer= spHandle.getSpIdUser();
+
+        Long id_order=spHandle.getSpIdChart();
+
+
+        MethodsFactory methodsFactory =  RetrofitHandle.getRetrofitLink().create(MethodsFactory.class);
+        Call<String> call= methodsFactory.deleteCart(id, id_order,token);
+        call.enqueue(new Callback<String>() {
+            @Override
+            public void onResponse(Call<String> call, Response<String> response) {
+                if(response.isSuccessful()){
+                    Intent intent = new Intent(ChartDetail.this,BottomNavigation.class);
+                    startActivity(intent);
+
+
+
+                }
+
+                else {
+                    // error case
+                    switch (response.code()) {
+                        case 404:
+                            Toast.makeText(ChartDetail.this, " not found", Toast.LENGTH_SHORT).show();
+                            break;
+                        case 500:
+                            Toast.makeText(ChartDetail.this, "server error", Toast.LENGTH_SHORT).show();
+                            break;
+                        case 401:
+                            Toast.makeText(ChartDetail.this, " sorry can't authenticated, try again", Toast.LENGTH_SHORT).show();
+                            break;
+
+                        default:
+                            Toast.makeText(ChartDetail.this, "unknown error ", Toast.LENGTH_SHORT).show();
+                            break;
+                    }
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<String> call, Throwable t) {
+                Toast.makeText(ChartDetail.this, "network failure :( inform the user and possibly retry ", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
+
+    }
+
 }

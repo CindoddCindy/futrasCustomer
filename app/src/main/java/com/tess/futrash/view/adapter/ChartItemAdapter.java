@@ -52,6 +52,7 @@ public class ChartItemAdapter extends RecyclerView.Adapter<ChartItemAdapter.Char
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
+                bundle.putLong("id_cart",content.getId());
                 bundle.putLong("id_user",content.getIdMitra());//id ini di simpan ketika dpat detail, setiap sv dr item detail save id mitra
                 bundle.putString("jm", content.getJenisMakanan());
                 bundle.putString("tds",content.getTidakDikonsumsiSejak());

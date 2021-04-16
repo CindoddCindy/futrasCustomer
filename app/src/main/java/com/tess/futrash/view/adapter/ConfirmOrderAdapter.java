@@ -59,6 +59,7 @@ public class ConfirmOrderAdapter extends RecyclerView.Adapter<ConfirmOrderAdapte
             public void onClick(View v) {
 
                 Bundle bundle = new Bundle();
+                bundle.putLong("id_confirm",content.getId());
                 bundle.putString("dc",content.getCreatedAt());
                 bundle.putString("jm",content.getJenisMakanan());
                 bundle.putString("lm",content.getLokasiMitra());
