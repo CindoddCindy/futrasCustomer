@@ -56,6 +56,9 @@ public class Content {
     @SerializedName("shipping_type")
     @Expose
     private String shippingType;
+    @SerializedName("id_order_buyer")
+    @Expose
+    private long idOrderBuyer;
     @SerializedName("user")
     @Expose
     private User user;
@@ -69,6 +72,7 @@ public class Content {
 
     /**
      * 
+     * @param idOrderBuyer
      * @param shippingType
      * @param itemDate
      * @param namaCustomer
@@ -87,7 +91,7 @@ public class Content {
      * @param lokasiMitra
      * @param phoneMitra
      */
-    public Content(String createdAt, String updatedAt, long id, String imageUrl, String terimaTolak, String catatanAlasan, String jenisMakanan, String lokasiCustomer, String namaCustomer, String phoneCustomer, String lokasiMitra, String namaMitra, String phoneMitra, String itemDate, String orderDate, String shippingType, User user) {
+    public Content(String createdAt, String updatedAt, long id, String imageUrl, String terimaTolak, String catatanAlasan, String jenisMakanan, String lokasiCustomer, String namaCustomer, String phoneCustomer, String lokasiMitra, String namaMitra, String phoneMitra, String itemDate, String orderDate, String shippingType, long idOrderBuyer, User user) {
         super();
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
@@ -105,6 +109,7 @@ public class Content {
         this.itemDate = itemDate;
         this.orderDate = orderDate;
         this.shippingType = shippingType;
+        this.idOrderBuyer = idOrderBuyer;
         this.user = user;
     }
 
@@ -234,6 +239,14 @@ public class Content {
 
     public void setShippingType(String shippingType) {
         this.shippingType = shippingType;
+    }
+
+    public long getIdOrderBuyer() {
+        return idOrderBuyer;
+    }
+
+    public void setIdOrderBuyer(long idOrderBuyer) {
+        this.idOrderBuyer = idOrderBuyer;
     }
 
     public User getUser() {
