@@ -57,6 +57,7 @@ public class ChartDetail extends AppCompatActivity {
         textView_hapus_chart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                deleteCart();
 
             }
         });
@@ -100,9 +101,7 @@ public class ChartDetail extends AppCompatActivity {
 
     }
 
-    public  void deleteChart(){
 
-    }
 
     public void sendToOrderPage(){
 

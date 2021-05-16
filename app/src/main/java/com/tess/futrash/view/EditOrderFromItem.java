@@ -330,4 +330,8 @@ public class EditOrderFromItem extends AppCompatActivity {
         orderToOwnSelf();
         orderToSeller();
     }
+
+    public void editOrder(){
+
+    }
 }

@@ -72,6 +72,8 @@ public interface MethodsFactory {
     @Headers({
             "Content-Type:application/json"
     })
+
+
     @GET("confirm/users/{id}/confirm")
     Call<GetConfirmRespon> getConfirm(@Path("id") Long id, @HeaderMap Map<String,String > Map);
 

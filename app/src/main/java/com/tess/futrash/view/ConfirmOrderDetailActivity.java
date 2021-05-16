@@ -57,7 +57,7 @@ public class ConfirmOrderDetailActivity extends AppCompatActivity {
         textView_hapus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                deleteConfirm();
             }
         });
 
